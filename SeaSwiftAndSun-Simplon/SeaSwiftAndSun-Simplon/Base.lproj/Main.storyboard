@@ -34,20 +34,80 @@
                                                         <constraint firstAttribute="height" constant="44" id="VXv-ax-Amp"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rockaway Beach" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="730-O7-c6b">
-                                                    <rect key="frame" x="72" y="11.000000000000002" width="301" height="21.666666666666671"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zvm-De-L4f" userLabel="DifficultyView">
+                                                    <rect key="frame" x="329" y="0.0" width="44" height="43.666666666666664"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPP-oJ-8Ty">
+                                                            <rect key="frame" x="0.0" y="11.333333333333336" width="11" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="21" id="Riq-xA-yhZ"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2lA-OJ-WnU">
+                                                            <rect key="frame" x="19" y="9.0000000000000036" width="25" height="24.666666666666668"/>
+                                                            <color key="tintColor" red="0.10896846390000001" green="0.56203952769999999" blue="0.58965825549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="25" id="6nG-a8-6Pn"/>
+                                                                <constraint firstAttribute="width" constant="25" id="GG6-eF-MyJ"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="2lA-OJ-WnU" firstAttribute="leading" secondItem="EPP-oJ-8Ty" secondAttribute="trailing" constant="8" symbolic="YES" id="Csh-8m-Gq5"/>
+                                                        <constraint firstItem="EPP-oJ-8Ty" firstAttribute="centerY" secondItem="zvm-De-L4f" secondAttribute="centerY" id="a0y-Ey-UJ4"/>
+                                                        <constraint firstAttribute="width" constant="44" id="fOZ-Kv-jvO"/>
+                                                        <constraint firstAttribute="trailing" secondItem="2lA-OJ-WnU" secondAttribute="trailing" id="qAA-89-cBi"/>
+                                                        <constraint firstItem="EPP-oJ-8Ty" firstAttribute="leading" secondItem="zvm-De-L4f" secondAttribute="leading" id="r25-Dh-oUa"/>
+                                                        <constraint firstItem="2lA-OJ-WnU" firstAttribute="centerY" secondItem="zvm-De-L4f" secondAttribute="centerY" id="wFc-Da-yjL"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZNj-wn-RKd" userLabel="TitlesView">
+                                                    <rect key="frame" x="72" y="0.0" width="249" height="43.666666666666664"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rockaway Beach" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="730-O7-c6b">
+                                                            <rect key="frame" x="8" y="1.6666666666666661" width="241" height="20.333333333333336"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="20.329999999999998" id="T52-w9-dRy"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tillamook, Oregon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMt-ub-Ax8">
+                                                            <rect key="frame" x="8" y="21.333333333333332" width="241" height="20.999999999999996"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="21" id="XfA-nC-Sz6"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="bMt-ub-Ax8" firstAttribute="centerY" secondItem="ZNj-wn-RKd" secondAttribute="centerY" constant="10" id="GSM-cI-iTS"/>
+                                                        <constraint firstItem="730-O7-c6b" firstAttribute="centerY" secondItem="ZNj-wn-RKd" secondAttribute="centerY" constant="-10" id="SaQ-o2-rE0"/>
+                                                        <constraint firstAttribute="trailing" secondItem="730-O7-c6b" secondAttribute="trailing" id="cr9-12-qMY"/>
+                                                        <constraint firstItem="bMt-ub-Ax8" firstAttribute="leading" secondItem="ZNj-wn-RKd" secondAttribute="leading" constant="8" id="kj3-Yh-P55"/>
+                                                        <constraint firstItem="730-O7-c6b" firstAttribute="leading" secondItem="ZNj-wn-RKd" secondAttribute="leading" constant="8" id="oAz-il-8In"/>
+                                                        <constraint firstAttribute="trailing" secondItem="bMt-ub-Ax8" secondAttribute="trailing" id="plT-nR-e9z"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="iB2-LN-PfI" firstAttribute="leading" secondItem="GtI-cs-DGT" secondAttribute="leading" constant="20" symbolic="YES" id="1Uc-bp-7QT"/>
-                                                <constraint firstItem="730-O7-c6b" firstAttribute="leading" secondItem="iB2-LN-PfI" secondAttribute="trailing" constant="8" symbolic="YES" id="Ib9-fv-9Ym"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="730-O7-c6b" secondAttribute="bottom" id="bSC-H1-GzM"/>
-                                                <constraint firstItem="730-O7-c6b" firstAttribute="top" secondItem="GtI-cs-DGT" secondAttribute="topMargin" id="kYG-D1-kXG"/>
+                                                <constraint firstItem="ZNj-wn-RKd" firstAttribute="leading" secondItem="iB2-LN-PfI" secondAttribute="trailing" constant="8" symbolic="YES" id="KXQ-Go-g6u"/>
+                                                <constraint firstItem="zvm-De-L4f" firstAttribute="leading" secondItem="ZNj-wn-RKd" secondAttribute="trailing" constant="8" symbolic="YES" id="VoF-Hf-f8A"/>
+                                                <constraint firstItem="zvm-De-L4f" firstAttribute="top" secondItem="GtI-cs-DGT" secondAttribute="top" id="ava-CZ-wdQ"/>
+                                                <constraint firstItem="ZNj-wn-RKd" firstAttribute="top" secondItem="GtI-cs-DGT" secondAttribute="top" id="e5Z-P2-OPX"/>
+                                                <constraint firstAttribute="bottom" secondItem="zvm-De-L4f" secondAttribute="bottom" id="gN2-B7-jWa"/>
+                                                <constraint firstAttribute="trailing" secondItem="zvm-De-L4f" secondAttribute="trailing" constant="20" symbolic="YES" id="k6k-wX-FYS"/>
+                                                <constraint firstAttribute="bottom" secondItem="ZNj-wn-RKd" secondAttribute="bottom" id="mLT-jJ-eyM"/>
                                                 <constraint firstItem="iB2-LN-PfI" firstAttribute="centerY" secondItem="GtI-cs-DGT" secondAttribute="centerY" id="rdM-9t-39W"/>
-                                                <constraint firstItem="730-O7-c6b" firstAttribute="trailing" secondItem="GtI-cs-DGT" secondAttribute="trailingMargin" id="sNT-2n-Ufb"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -78,6 +138,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
         <image name="surfSpot" width="3861" height="2574"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
