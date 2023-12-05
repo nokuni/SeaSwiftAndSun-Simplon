@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zm5-YI-dfj">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
@@ -17,14 +17,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ehw-73-G87">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SpotCell" id="xb5-bA-MBo" customClass="SpotCell" customModule="SeaSwiftAndSun_Simplon" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SpotCell" id="xb5-bA-MBo" customClass="SpotCell" customModule="SeaSwiftAndSun_Simplon" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xb5-bA-MBo" id="GtI-cs-DGT">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="surfSpot" translatesAutoresizingMaskIntoConstraints="NO" id="iB2-LN-PfI">
@@ -35,7 +35,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zvm-De-L4f" userLabel="DifficultyView">
-                                                    <rect key="frame" x="329" y="0.0" width="44" height="43.666666666666664"/>
+                                                    <rect key="frame" x="298.66666666666669" y="0.0" width="44" height="43.666666666666664"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPP-oJ-8Ty">
                                                             <rect key="frame" x="0.0" y="11.333333333333336" width="11" height="21"/>
@@ -48,14 +48,13 @@
                                                         </label>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2lA-OJ-WnU">
                                                             <rect key="frame" x="19" y="9.0000000000000036" width="25" height="24.666666666666668"/>
-                                                            <color key="tintColor" red="0.10896846390000001" green="0.56203952769999999" blue="0.58965825549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="tintColor" systemColor="systemTealColor"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="25" id="6nG-a8-6Pn"/>
                                                                 <constraint firstAttribute="width" constant="25" id="GG6-eF-MyJ"/>
                                                             </constraints>
                                                         </imageView>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstItem="2lA-OJ-WnU" firstAttribute="leading" secondItem="EPP-oJ-8Ty" secondAttribute="trailing" constant="8" symbolic="YES" id="Csh-8m-Gq5"/>
                                                         <constraint firstItem="EPP-oJ-8Ty" firstAttribute="centerY" secondItem="zvm-De-L4f" secondAttribute="centerY" id="a0y-Ey-UJ4"/>
@@ -66,10 +65,10 @@
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZNj-wn-RKd" userLabel="TitlesView">
-                                                    <rect key="frame" x="72" y="0.0" width="249" height="43.666666666666664"/>
+                                                    <rect key="frame" x="71.999999999999986" y="0.0" width="218.66666666666663" height="43.666666666666664"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rockaway Beach" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="730-O7-c6b">
-                                                            <rect key="frame" x="8" y="1.6666666666666661" width="241" height="20.333333333333336"/>
+                                                            <rect key="frame" x="8" y="1.6666666666666661" width="210.66666666666666" height="20.333333333333336"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20.329999999999998" id="T52-w9-dRy"/>
                                                             </constraints>
@@ -78,16 +77,15 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tillamook, Oregon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMt-ub-Ax8">
-                                                            <rect key="frame" x="8" y="21.333333333333332" width="241" height="20.999999999999996"/>
+                                                            <rect key="frame" x="8" y="21.333333333333332" width="210.66666666666666" height="20.999999999999996"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="XfA-nC-Sz6"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
-                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <color key="textColor" systemColor="systemTealColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstItem="bMt-ub-Ax8" firstAttribute="centerY" secondItem="ZNj-wn-RKd" secondAttribute="centerY" constant="10" id="GSM-cI-iTS"/>
                                                         <constraint firstItem="730-O7-c6b" firstAttribute="centerY" secondItem="ZNj-wn-RKd" secondAttribute="centerY" constant="-10" id="SaQ-o2-rE0"/>
@@ -113,6 +111,7 @@
                                         <connections>
                                             <outlet property="spotImage" destination="iB2-LN-PfI" id="QJo-dL-J9f"/>
                                             <outlet property="spotName" destination="730-O7-c6b" id="CRu-5k-6vH"/>
+                                            <segue destination="wR1-FD-g1K" kind="show" id="llb-NC-Zl7"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -131,8 +130,44 @@
                             <constraint firstItem="Ehw-73-G87" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="z1D-Gl-SiQ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="qRO-YG-lRL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973.28244274809151" y="-2.1126760563380285"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hOS-zN-mGs">
+            <objects>
+                <viewController id="wR1-FD-g1K" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JLd-Uq-xkk">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="37B-wj-XJD"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qeC-Fe-I1x"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dhm-9c-RtJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1810" y="-2"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iGi-0h-EbE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zm5-YI-dfj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AWb-Vv-h6E">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3rJ-jl-xza"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qpH-YI-yaT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
         </scene>
@@ -142,6 +177,9 @@
         <image name="surfSpot" width="3861" height="2574"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

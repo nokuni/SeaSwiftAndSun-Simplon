@@ -11,7 +11,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        self.title = "Liste des spots de surf"
     }
 }
 
@@ -35,6 +36,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
 
+    // Rows
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 1:
@@ -44,7 +46,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-    // Rows
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 55
     }
