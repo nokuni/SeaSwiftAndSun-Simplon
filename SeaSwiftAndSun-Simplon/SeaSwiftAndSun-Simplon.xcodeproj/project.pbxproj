@@ -15,6 +15,8 @@
 		4201DA7B2B1F686E002A203E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4201DA792B1F686E002A203E /* LaunchScreen.storyboard */; };
 		4201DA832B1F6C28002A203E /* SpotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201DA822B1F6C28002A203E /* SpotCell.swift */; };
 		4201DA872B1F7589002A203E /* DetailSpotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201DA862B1F7589002A203E /* DetailSpotViewController.swift */; };
+		A8E5863C2B275C1A00B5B538 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5863B2B275C1A00B5B538 /* APIManager.swift */; };
+		A8E586402B275E1600B5B538 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5863F2B275E1600B5B538 /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		4201DA7C2B1F686E002A203E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4201DA822B1F6C28002A203E /* SpotCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotCell.swift; sourceTree = "<group>"; };
 		4201DA862B1F7589002A203E /* DetailSpotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSpotViewController.swift; sourceTree = "<group>"; };
+		A8E5863B2B275C1A00B5B538 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		A8E5863F2B275E1600B5B538 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 		4201DA6D2B1F686B002A203E /* SeaSwiftAndSun-Simplon */ = {
 			isa = PBXGroup;
 			children = (
+				A8E5863D2B275DF000B5B538 /* Extensions */,
 				4201DA852B1F756D002A203E /* Views */,
 				4201DA842B1F7561002A203E /* Controllers */,
 				4201DA6E2B1F686B002A203E /* AppDelegate.swift */,
@@ -68,6 +73,7 @@
 				4201DA772B1F686E002A203E /* Assets.xcassets */,
 				4201DA792B1F686E002A203E /* LaunchScreen.storyboard */,
 				4201DA7C2B1F686E002A203E /* Info.plist */,
+				A8E5863B2B275C1A00B5B538 /* APIManager.swift */,
 			);
 			path = "SeaSwiftAndSun-Simplon";
 			sourceTree = "<group>";
@@ -87,6 +93,14 @@
 				4201DA822B1F6C28002A203E /* SpotCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		A8E5863D2B275DF000B5B538 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A8E5863F2B275E1600B5B538 /* StringExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +174,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8E5863C2B275C1A00B5B538 /* APIManager.swift in Sources */,
+				A8E586402B275E1600B5B538 /* StringExtension.swift in Sources */,
 				4201DA872B1F7589002A203E /* DetailSpotViewController.swift in Sources */,
 				4201DA732B1F686B002A203E /* ViewController.swift in Sources */,
 				4201DA6F2B1F686B002A203E /* AppDelegate.swift in Sources */,
