@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+extension String: LocalizedError {
+    public var errorDescription: String? { return self }
+}
+
+extension String {
+    func isLastCharacter(_ character: Character) -> Bool {
+        guard !self.isEmpty else { return false }
+        return self.last == character
+    }
+}
