@@ -6,23 +6,46 @@
 //
 
 import XCTest
+import SeaSwiftAndSun_Simplon
 
 final class APIManagerTests: XCTestCase {
+    
+    var apiManager: APIManager!
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        apiManager = APIManager()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        apiManager = nil
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func test_get_success() async throws {
+        // Given
+        let expectation = XCTestExpectation(description: "Expecting get data")
+        // TODO: Complete URL
+        let url = ""
+        // When
+        // TODO: Complete Data
+        //let data: [Data] = try await apiManager.get(url: url)
+        //if !data.isEmpty { expectation.fulfill() }
+        // Then
+        await fulfillment(of: [expectation])
+    }
+    
+    func test_post_success() async throws {
+        // Given
+        let expectation = XCTestExpectation(description: "Expecting post data")
+        // TODO: Complete value
+        //let value = Data.value
+        // TODO: Complete URL
+        //let url = ""
+        // When
+        // TODO: Complete Data
+        //let data: [TestObject] = try await apiManager.post(url: url, value: value)
+        //if !data.isEmpty { expectation.fulfill() }
+        // Then
+        await fulfillment(of: [expectation])
     }
 
     func testPerformanceExample() throws {
