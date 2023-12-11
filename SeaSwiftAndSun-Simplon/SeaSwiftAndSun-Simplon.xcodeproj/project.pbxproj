@@ -17,7 +17,18 @@
 		4201DA872B1F7589002A203E /* DetailSpotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201DA862B1F7589002A203E /* DetailSpotViewController.swift */; };
 		A8E5863C2B275C1A00B5B538 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5863B2B275C1A00B5B538 /* APIManager.swift */; };
 		A8E586402B275E1600B5B538 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5863F2B275E1600B5B538 /* StringExtension.swift */; };
+		A8E586482B2766D400B5B538 /* APIManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E586472B2766D400B5B538 /* APIManagerTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A8E586492B2766D400B5B538 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4201DA632B1F686B002A203E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4201DA6A2B1F686B002A203E;
+			remoteInfo = "SeaSwiftAndSun-Simplon";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4201DA6B2B1F686B002A203E /* SeaSwiftAndSun-Simplon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SeaSwiftAndSun-Simplon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,10 +43,19 @@
 		4201DA862B1F7589002A203E /* DetailSpotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSpotViewController.swift; sourceTree = "<group>"; };
 		A8E5863B2B275C1A00B5B538 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		A8E5863F2B275E1600B5B538 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		A8E586452B2766D400B5B538 /* SeaSwiftAndSun-SimplonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SeaSwiftAndSun-SimplonTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8E586472B2766D400B5B538 /* APIManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4201DA682B1F686B002A203E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8E586422B2766D400B5B538 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				4201DA6D2B1F686B002A203E /* SeaSwiftAndSun-Simplon */,
+				A8E586462B2766D400B5B538 /* SeaSwiftAndSun-SimplonTests */,
 				4201DA6C2B1F686B002A203E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				4201DA6B2B1F686B002A203E /* SeaSwiftAndSun-Simplon.app */,
+				A8E586452B2766D400B5B538 /* SeaSwiftAndSun-SimplonTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +125,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		A8E586462B2766D400B5B538 /* SeaSwiftAndSun-SimplonTests */ = {
+			isa = PBXGroup;
+			children = (
+				A8E586472B2766D400B5B538 /* APIManagerTests.swift */,
+			);
+			path = "SeaSwiftAndSun-SimplonTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,6 +153,24 @@
 			productReference = 4201DA6B2B1F686B002A203E /* SeaSwiftAndSun-Simplon.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A8E586442B2766D400B5B538 /* SeaSwiftAndSun-SimplonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8E5864B2B2766D400B5B538 /* Build configuration list for PBXNativeTarget "SeaSwiftAndSun-SimplonTests" */;
+			buildPhases = (
+				A8E586412B2766D400B5B538 /* Sources */,
+				A8E586422B2766D400B5B538 /* Frameworks */,
+				A8E586432B2766D400B5B538 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8E5864A2B2766D400B5B538 /* PBXTargetDependency */,
+			);
+			name = "SeaSwiftAndSun-SimplonTests";
+			productName = "SeaSwiftAndSun-SimplonTests";
+			productReference = A8E586452B2766D400B5B538 /* SeaSwiftAndSun-SimplonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -135,6 +183,10 @@
 				TargetAttributes = {
 					4201DA6A2B1F686B002A203E = {
 						CreatedOnToolsVersion = 15.0.1;
+					};
+					A8E586442B2766D400B5B538 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 4201DA6A2B1F686B002A203E;
 					};
 				};
 			};
@@ -152,6 +204,7 @@
 			projectRoot = "";
 			targets = (
 				4201DA6A2B1F686B002A203E /* SeaSwiftAndSun-Simplon */,
+				A8E586442B2766D400B5B538 /* SeaSwiftAndSun-SimplonTests */,
 			);
 		};
 /* End PBXProject section */
@@ -164,6 +217,13 @@
 				4201DA7B2B1F686E002A203E /* LaunchScreen.storyboard in Resources */,
 				4201DA782B1F686E002A203E /* Assets.xcassets in Resources */,
 				4201DA762B1F686B002A203E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8E586432B2766D400B5B538 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,7 +244,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A8E586412B2766D400B5B538 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8E586482B2766D400B5B538 /* APIManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A8E5864A2B2766D400B5B538 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4201DA6A2B1F686B002A203E /* SeaSwiftAndSun-Simplon */;
+			targetProxy = A8E586492B2766D400B5B538 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4201DA742B1F686B002A203E /* Main.storyboard */ = {
@@ -385,6 +461,42 @@
 			};
 			name = Release;
 		};
+		A8E5864C2B2766D400B5B538 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q6DV6C6352;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yann.SeaSwiftAndSun-SimplonTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeaSwiftAndSun-Simplon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SeaSwiftAndSun-Simplon";
+			};
+			name = Debug;
+		};
+		A8E5864D2B2766D400B5B538 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q6DV6C6352;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yann.SeaSwiftAndSun-SimplonTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeaSwiftAndSun-Simplon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SeaSwiftAndSun-Simplon";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -402,6 +514,15 @@
 			buildConfigurations = (
 				4201DA802B1F686E002A203E /* Debug */,
 				4201DA812B1F686E002A203E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8E5864B2B2766D400B5B538 /* Build configuration list for PBXNativeTarget "SeaSwiftAndSun-SimplonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8E5864C2B2766D400B5B538 /* Debug */,
+				A8E5864D2B2766D400B5B538 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
