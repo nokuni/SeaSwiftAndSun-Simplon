@@ -6,8 +6,11 @@
 //
 
 import XCTest
+import SwiftUI
+@testable import SeaSwiftAndSun_Simplon
 
 final class ViewControllerTests: XCTestCase {
+    var viewController = ViewController()
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -32,4 +35,31 @@ final class ViewControllerTests: XCTestCase {
         }
     }
 
+    func testNumberOfSections() {
+        let tableView = UITableView()
+
+        let numberOfSections = viewController.numberOfSections(in: tableView)
+
+        XCTAssertEqual(numberOfSections, SurfBreak.allCases.count)
+    }
+    
+    func testTitleForHeaderInSection() {
+        let tableView = UITableView()
+
+        // Test section 1
+        let title1 = viewController.tableView(tableView, titleForHeaderInSection: 1)
+        XCTAssertEqual(title1, SurfBreak.beachBreak.rawValue)
+
+        // Test section 2
+        let title2 = viewController.tableView(tableView, titleForHeaderInSection: 2)
+        XCTAssertEqual(title2, SurfBreak.reefBreak.rawValue)
+
+        // Test section 3
+        let title3 = viewController.tableView(tableView, titleForHeaderInSection: 3)
+        XCTAssertEqual(title3, SurfBreak.pointBreak.rawValue)
+
+        // Test default section
+        let defaultTitle = viewController.tableView(tableView, titleForHeaderInSection: 0)
+        XCTAssertEqual(defaultTitle, SurfBreak.outerBanks.rawValue)
+    }
 }
