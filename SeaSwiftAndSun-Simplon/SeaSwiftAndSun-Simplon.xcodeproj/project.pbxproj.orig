@@ -15,10 +15,13 @@
 		4201DA7B2B1F686E002A203E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4201DA792B1F686E002A203E /* LaunchScreen.storyboard */; };
 		4201DA832B1F6C28002A203E /* SpotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201DA822B1F6C28002A203E /* SpotCell.swift */; };
 		4201DA872B1F7589002A203E /* DetailSpotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201DA862B1F7589002A203E /* DetailSpotViewController.swift */; };
+<<<<<<< HEAD
 		7B9A2F742B2769AB00D2E498 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A2F732B2769AB00D2E498 /* Model.swift */; };
 		A8E5863C2B275C1A00B5B538 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5863B2B275C1A00B5B538 /* APIManager.swift */; };
 		A8E586402B275E1600B5B538 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5863F2B275E1600B5B538 /* StringExtension.swift */; };
-		A8EC0AE32B28824E00A450A8 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC0AE22B28824E00A450A8 /* UIImageViewExtension.swift */; };
+=======
+		7BEE6EA02B284E60004AEE4C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7BEE6E9F2B284E60004AEE4C /* .gitignore */; };
+>>>>>>> da3a38f (feat: added gitignore with ds_store)
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,10 +35,13 @@
 		4201DA7C2B1F686E002A203E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4201DA822B1F6C28002A203E /* SpotCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotCell.swift; sourceTree = "<group>"; };
 		4201DA862B1F7589002A203E /* DetailSpotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSpotViewController.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		7B9A2F732B2769AB00D2E498 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		A8E5863B2B275C1A00B5B538 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		A8E5863F2B275E1600B5B538 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
-		A8EC0AE22B28824E00A450A8 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+=======
+		7BEE6E9F2B284E60004AEE4C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = ../../.gitignore; sourceTree = "<group>"; };
+>>>>>>> da3a38f (feat: added gitignore with ds_store)
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +74,11 @@
 		4201DA6D2B1F686B002A203E /* SeaSwiftAndSun-Simplon */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				A8E5863D2B275DF000B5B538 /* Extensions */,
+=======
+				7BEE6E9F2B284E60004AEE4C /* .gitignore */,
+>>>>>>> da3a38f (feat: added gitignore with ds_store)
 				4201DA852B1F756D002A203E /* Views */,
 				4201DA842B1F7561002A203E /* Controllers */,
 				4201DA6E2B1F686B002A203E /* AppDelegate.swift */,
@@ -77,6 +87,7 @@
 				4201DA772B1F686E002A203E /* Assets.xcassets */,
 				4201DA792B1F686E002A203E /* LaunchScreen.storyboard */,
 				4201DA7C2B1F686E002A203E /* Info.plist */,
+				A8E5863B2B275C1A00B5B538 /* APIManager.swift */,
 				7B9A2F722B2769AB00D2E498 /* Model */,
 			);
 			path = "SeaSwiftAndSun-Simplon";
@@ -102,7 +113,7 @@
 		7B9A2F722B2769AB00D2E498 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7BEE6EA12B2854FA004AEE4C /* Model.swift */,
+				7B9A2F732B2769AB00D2E498 /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -111,7 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				A8E5863F2B275E1600B5B538 /* StringExtension.swift */,
-				A8EC0AE22B28824E00A450A8 /* UIImageViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -174,6 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BEE6EA02B284E60004AEE4C /* .gitignore in Resources */,
 				4201DA7B2B1F686E002A203E /* LaunchScreen.storyboard in Resources */,
 				4201DA782B1F686E002A203E /* Assets.xcassets in Resources */,
 				4201DA762B1F686B002A203E /* Main.storyboard in Resources */,
@@ -187,18 +198,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BEE6EA22B2854FA004AEE4C /* Model.swift in Sources */,
-				A8E5863C2B275C1A00B5B538 /* (null) in Sources */,
-				7BEE6EA42B28551E004AEE4C /* APIManager.swift in Sources */,
-				A8E586402B275E1600B5B538 /* (null) in Sources */,
+				A8E5863C2B275C1A00B5B538 /* APIManager.swift in Sources */,
+				A8E586402B275E1600B5B538 /* StringExtension.swift in Sources */,
 				4201DA872B1F7589002A203E /* DetailSpotViewController.swift in Sources */,
 				4201DA732B1F686B002A203E /* ViewController.swift in Sources */,
 				4201DA6F2B1F686B002A203E /* AppDelegate.swift in Sources */,
-				A8EC0AE32B28824E00A450A8 /* UIImageViewExtension.swift in Sources */,
 				4201DA712B1F686B002A203E /* SceneDelegate.swift in Sources */,
 				4201DA832B1F6C28002A203E /* SpotCell.swift in Sources */,
-				7BEE6EA62B28555B004AEE4C /* StringExtension.swift in Sources */,
-				7B9A2F742B2769AB00D2E498 /* (null) in Sources */,
+				7B9A2F742B2769AB00D2E498 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

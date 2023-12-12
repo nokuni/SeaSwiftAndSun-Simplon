@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zm5-YI-dfj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zm5-YI-dfj">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -76,7 +76,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tillamook, Oregon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMt-ub-Ax8">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tillamook, Oregon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMt-ub-Ax8" userLabel="Spot Location">
                                                             <rect key="frame" x="8" y="21.333333333333332" width="210.66666666666666" height="20.999999999999996"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="XfA-nC-Sz6"/>
@@ -109,7 +109,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="spotDifficulty" destination="EPP-oJ-8Ty" id="fA5-Z1-3J5"/>
                                             <outlet property="spotImage" destination="iB2-LN-PfI" id="QJo-dL-J9f"/>
+                                            <outlet property="spotLocation" destination="bMt-ub-Ax8" id="XmB-ir-MOi"/>
                                             <outlet property="spotName" destination="730-O7-c6b" id="CRu-5k-6vH"/>
                                             <segue destination="wR1-FD-g1K" kind="show" id="llb-NC-Zl7"/>
                                         </connections>
@@ -131,6 +133,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qRO-YG-lRL"/>
+                    <connections>
+                        <outlet property="tableView" destination="Ehw-73-G87" id="jzr-4q-ZcF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
