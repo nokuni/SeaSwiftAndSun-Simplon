@@ -23,6 +23,17 @@ final class ApiManagerTests: XCTestCase {
         // Then
         XCTAssertNotNil(data)
     }
+    
+    func testGetURLFail() throws {
+        // Given
+        var data: APIManagerMock.MockData? = nil
+        // When
+        runAsyncTest {
+            data = try await self.apiManager.get(url: "")
+        }
+        // Then
+        XCTAssertNotNil(data)
+    }
 }
 
 class APIManagerMock {
