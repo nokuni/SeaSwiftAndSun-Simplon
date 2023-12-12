@@ -1,0 +1,28 @@
+{
+  "configurations" : [
+    {
+      "id" : "3F70CB70-CAF9-4AF7-9619-2B962DA09974",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:SeaSwiftAndSun-Simplon.xcodeproj",
+      "identifier" : "4201DA6A2B1F686B002A203E",
+      "name" : "SeaSwiftAndSun-Simplon"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:SeaSwiftAndSun-Simplon.xcodeproj",
+        "identifier" : "7B9A2F7E2B2894BB00D2E498",
+        "name" : "SeaSwiftAndSun-SimplonTests"
+      }
+    }
+  ],
+  "version" : 1
+}

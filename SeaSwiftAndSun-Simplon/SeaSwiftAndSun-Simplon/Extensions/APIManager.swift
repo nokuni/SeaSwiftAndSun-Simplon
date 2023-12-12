@@ -138,7 +138,7 @@ public final class APIManager {
     
     /// Simple formatted method to GET data.
     public func get<T: Codable>(url: String,
-                                token: String?,
+                                token: String? = nil,
                                 key: String? = nil,
                                 htttpHeaderField: String? = nil,
                                 cachePolicy: URLRequest.CachePolicy = .useProtocolCachePolicy,

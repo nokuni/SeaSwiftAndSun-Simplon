@@ -16,11 +16,12 @@
 		4201DA832B1F6C28002A203E /* SpotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201DA822B1F6C28002A203E /* SpotCell.swift */; };
 		4201DA872B1F7589002A203E /* DetailSpotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201DA862B1F7589002A203E /* DetailSpotViewController.swift */; };
 		7B9A2F822B2894BB00D2E498 /* SeaSwiftAndSun_SimplonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A2F812B2894BB00D2E498 /* SeaSwiftAndSun_SimplonTests.swift */; };
-		7B9A2F892B2894DA00D2E498 /* ApiManagersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A2F882B2894DA00D2E498 /* ApiManagersTests.swift */; };
+		7B9A2F892B2894DA00D2E498 /* ApiManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A2F882B2894DA00D2E498 /* ApiManagerTests.swift */; };
 		7B9A2F8B2B28950700D2E498 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A2F8A2B28950700D2E498 /* ViewControllerTests.swift */; };
 		7B9A2F8D2B28952100D2E498 /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A2F8C2B28952100D2E498 /* ExtensionTests.swift */; };
 		A841DA1A2B2891480036DE4F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A841DA192B2891480036DE4F /* Model.swift */; };
 		A841DA1C2B28914F0036DE4F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A841DA1B2B28914F0036DE4F /* APIManager.swift */; };
+		A876ACFE2B28A05600A11E21 /* XCTestCaseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A876ACFD2B28A05600A11E21 /* XCTestCaseExtension.swift */; };
 		A8E586402B275E1600B5B538 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5863F2B275E1600B5B538 /* StringExtension.swift */; };
 		A8EC0AE32B28824E00A450A8 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC0AE22B28824E00A450A8 /* UIImageViewExtension.swift */; };
 /* End PBXBuildFile section */
@@ -48,11 +49,13 @@
 		4201DA862B1F7589002A203E /* DetailSpotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSpotViewController.swift; sourceTree = "<group>"; };
 		7B9A2F7F2B2894BB00D2E498 /* SeaSwiftAndSun-SimplonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SeaSwiftAndSun-SimplonTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B9A2F812B2894BB00D2E498 /* SeaSwiftAndSun_SimplonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaSwiftAndSun_SimplonTests.swift; sourceTree = "<group>"; };
-		7B9A2F882B2894DA00D2E498 /* ApiManagersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManagersTests.swift; sourceTree = "<group>"; };
+		7B9A2F882B2894DA00D2E498 /* ApiManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManagerTests.swift; sourceTree = "<group>"; };
 		7B9A2F8A2B28950700D2E498 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		7B9A2F8C2B28952100D2E498 /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
 		A841DA192B2891480036DE4F /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		A841DA1B2B28914F0036DE4F /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		A876ACFA2B289E6600A11E21 /* SeaSwiftAndSun-Simplon.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "SeaSwiftAndSun-Simplon.xctestplan"; sourceTree = "<group>"; };
+		A876ACFD2B28A05600A11E21 /* XCTestCaseExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCaseExtension.swift; sourceTree = "<group>"; };
 		A8E5863F2B275E1600B5B538 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		A8EC0AE22B28824E00A450A8 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +81,7 @@
 		4201DA622B1F686B002A203E = {
 			isa = PBXGroup;
 			children = (
+				A876ACFA2B289E6600A11E21 /* SeaSwiftAndSun-Simplon.xctestplan */,
 				4201DA6D2B1F686B002A203E /* SeaSwiftAndSun-Simplon */,
 				7B9A2F802B2894BB00D2E498 /* SeaSwiftAndSun-SimplonTests */,
 				4201DA6C2B1F686B002A203E /* Products */,
@@ -139,9 +143,10 @@
 			isa = PBXGroup;
 			children = (
 				7B9A2F812B2894BB00D2E498 /* SeaSwiftAndSun_SimplonTests.swift */,
-				7B9A2F882B2894DA00D2E498 /* ApiManagersTests.swift */,
+				7B9A2F882B2894DA00D2E498 /* ApiManagerTests.swift */,
 				7B9A2F8A2B28950700D2E498 /* ViewControllerTests.swift */,
 				7B9A2F8C2B28952100D2E498 /* ExtensionTests.swift */,
+				A876ACFD2B28A05600A11E21 /* XCTestCaseExtension.swift */,
 			);
 			path = "SeaSwiftAndSun-SimplonTests";
 			sourceTree = "<group>";
@@ -274,8 +279,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B9A2F8B2B28950700D2E498 /* ViewControllerTests.swift in Sources */,
-				7B9A2F892B2894DA00D2E498 /* ApiManagersTests.swift in Sources */,
+				7B9A2F892B2894DA00D2E498 /* ApiManagerTests.swift in Sources */,
 				7B9A2F822B2894BB00D2E498 /* SeaSwiftAndSun_SimplonTests.swift in Sources */,
+				A876ACFE2B28A05600A11E21 /* XCTestCaseExtension.swift in Sources */,
 				7B9A2F8D2B28952100D2E498 /* ExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,7 +442,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6FH7WNJPHQ;
+				DEVELOPMENT_TEAM = Q6DV6C6352;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SeaSwiftAndSun-Simplon/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -466,7 +472,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6FH7WNJPHQ;
+				DEVELOPMENT_TEAM = Q6DV6C6352;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SeaSwiftAndSun-Simplon/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -495,7 +501,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GGSAC4842K;
+				DEVELOPMENT_TEAM = Q6DV6C6352;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ameliepocchiolo.SeaSwiftAndSun-SimplonTests";
@@ -513,7 +519,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GGSAC4842K;
+				DEVELOPMENT_TEAM = Q6DV6C6352;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ameliepocchiolo.SeaSwiftAndSun-SimplonTests";

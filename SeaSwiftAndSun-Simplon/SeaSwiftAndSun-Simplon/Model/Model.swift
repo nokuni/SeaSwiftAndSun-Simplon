@@ -8,18 +8,57 @@
 import Foundation
 
 // MARK: - RecordData
-struct RecordData: Codable {
+public struct RecordData: Codable {
+    
+    public init(records: [Record]) {
+        self.records = records
+    }
+    
     let records: [Record]
 }
 
 // MARK: - Record
-struct Record: Codable {
+public struct Record: Codable {
+    
+    public init(id: String, 
+                createdTime: String,
+                fields: Fields) {
+        self.id = id
+        self.createdTime = createdTime
+        self.fields = fields
+    }
+    
     let id, createdTime: String
     let fields: Fields
 }
 
 // MARK: - Fields
-struct Fields: Codable {
+public struct Fields: Codable {
+    
+    public init(peakSurfSeasonBegins: String, 
+                destinationStateCountry: String,
+                peakSurfSeasonEnds: String,
+                difficultyLevel: Int,
+                destination: String,
+                surfBreak: [SurfBreak],
+                magicSeaweedLink: String,
+                photos: [Photo],
+                address: String,
+                influencers: [Influencer]?,
+                travellers: [String]?) {
+        self.peakSurfSeasonBegins = peakSurfSeasonBegins
+        self.destinationStateCountry = destinationStateCountry
+        self.peakSurfSeasonEnds = peakSurfSeasonEnds
+        self.difficultyLevel = difficultyLevel
+        self.destination = destination
+        self.surfBreak = surfBreak
+        self.magicSeaweedLink = magicSeaweedLink
+        self.photos = photos
+        self.address = address
+        self.influencers = influencers
+        self.travellers = travellers
+    }
+    
     let peakSurfSeasonBegins, destinationStateCountry, peakSurfSeasonEnds: String
     let difficultyLevel: Int
     let destination: String
@@ -45,14 +84,33 @@ struct Fields: Codable {
     }
 }
 
-enum Influencer: String, Codable {
+public enum Influencer: String, Codable {
     case rec6XXh0NA3YateHo = "rec6XXh0NA3yateHo"
     case recRENCkIVsaoGUPD = "recRENCkIVsaoGUPd"
     case recf2Hoa8CLQojEYy = "recf2Hoa8CLQojEYy"
 }
 
 // MARK: - Photo
-struct Photo: Codable {
+public struct Photo: Codable {
+    
+    public init(id: String, 
+                width: Int,
+                height: Int,
+                url: String,
+                filename: String,
+                size: Int,
+                type: TypeEnum,
+                thumbnails: Thumbnails) {
+        self.id = id
+        self.width = width
+        self.height = height
+        self.url = url
+        self.filename = filename
+        self.size = size
+        self.type = type
+        self.thumbnails = thumbnails
+    }
+    
     let id: String
     let width, height: Int
     let url: String
@@ -63,21 +121,39 @@ struct Photo: Codable {
 }
 
 // MARK: - Thumbnails
-struct Thumbnails: Codable {
+public struct Thumbnails: Codable {
+    
+    public init(small: Full,
+                large: Full,
+                full: Full) {
+        self.small = small
+        self.large = large
+        self.full = full
+    }
+    
     let small, large, full: Full
 }
 
 // MARK: - Full
-struct Full: Codable {
+public struct Full: Codable {
+    
+    public init(url: String, 
+                width: Int,
+                height: Int) {
+        self.url = url
+        self.width = width
+        self.height = height
+    }
+    
     let url: String
     let width, height: Int
 }
 
-enum TypeEnum: String, Codable {
+public enum TypeEnum: String, Codable {
     case imageJPEG = "image/jpeg"
 }
 
-enum SurfBreak: String, CaseIterable, Codable {
+public enum SurfBreak: String, CaseIterable, Codable {
     case beachBreak = "Beach Break"
     case reefBreak = "Reef Break"
     case pointBreak = "Point Break"
