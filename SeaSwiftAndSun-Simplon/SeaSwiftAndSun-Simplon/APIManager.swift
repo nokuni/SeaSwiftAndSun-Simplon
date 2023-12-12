@@ -34,6 +34,7 @@ public final class APIManager {
     }
     
     private func urlRequest(url: URL,
+                            token: String?,
                             httpMethod: HTTPMethod,
                             cachePolicy: URLRequest.CachePolicy = .useProtocolCachePolicy) -> URLRequest {
         var request = URLRequest(url: url, cachePolicy: cachePolicy)
@@ -41,6 +42,9 @@ public final class APIManager {
         if httpMethod == .post || httpMethod == .put {
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
             request.addValue("application/json", forHTTPHeaderField: "Accept")
+        }
+        if httpMethod == .get {
+            request.addValue( "Bearer " + (token ?? ""), forHTTPHeaderField: "Authorization")
         }
         
         return request
@@ -101,6 +105,7 @@ public final class APIManager {
     
     /// Returns the data from the HTTP request.
     private func request<T: Codable>(url: String,
+                                     token: String?,
                                      value: T? = nil,
                                      httpMethod: HTTPMethod,
                                      key: String? = nil,
@@ -112,6 +117,7 @@ public final class APIManager {
         let url: URL = try getURL(url)
         
         var request = urlRequest(url: url,
+                                 token: token,
                                  httpMethod: httpMethod,
                                  cachePolicy: cachePolicy)
         
@@ -132,13 +138,15 @@ public final class APIManager {
     
     /// Simple formatted method to GET data.
     public func get<T: Codable>(url: String,
+                                token: String?,
                                 key: String? = nil,
                                 htttpHeaderField: String? = nil,
                                 cachePolicy: URLRequest.CachePolicy = .useProtocolCachePolicy,
                                 dateDecodingStrategy: JSONDecoder.DateDecodingStrategy = .deferredToDate,
                                 dataDecodingStrategy: JSONDecoder.DataDecodingStrategy = .base64,
                                 keyDecodingStrategy: JSONDecoder.KeyDecodingStrategy = .useDefaultKeys) async throws -> T {
-        try await request(url: url,
+        try await request(url: url, 
+                          token: token,
                           httpMethod: .get,
                           key: key,
                           htttpHeaderField: htttpHeaderField,
@@ -150,6 +158,7 @@ public final class APIManager {
     
     /// Simple formatted method to GET data with an ID.
     public func get<T: Codable>(url: String,
+                                token: String?,
                                 id: Int,
                                 key: String? = nil,
                                 htttpHeaderField: String? = nil,
@@ -158,6 +167,7 @@ public final class APIManager {
                                 dataDecodingStrategy: JSONDecoder.DataDecodingStrategy = .base64,
                                 keyDecodingStrategy: JSONDecoder.KeyDecodingStrategy = .useDefaultKeys) async throws -> T {
         try await request(url: "\(cleanURL(url))\(id)",
+                          token: token,
                           httpMethod: .get,
                           key: key,
                           htttpHeaderField: htttpHeaderField,
@@ -169,12 +179,14 @@ public final class APIManager {
     
     /// Simple formatted method to POST data.
     public func post<T: Codable>(url: String,
+                                 token: String?,
                                  value: T,
                                  cachePolicy: URLRequest.CachePolicy = .useProtocolCachePolicy,
                                  dateDecodingStrategy: JSONDecoder.DateDecodingStrategy = .deferredToDate,
                                  dataDecodingStrategy: JSONDecoder.DataDecodingStrategy = .base64,
                                  keyDecodingStrategy: JSONDecoder.KeyDecodingStrategy = .useDefaultKeys) async throws -> T {
         try await request(url: url,
+                          token: token,
                           httpMethod: .post,
                           cachePolicy: cachePolicy,
                           dateDecodingStrategy: dateDecodingStrategy,
@@ -184,12 +196,14 @@ public final class APIManager {
     
     /// Simple formatted method to PUT data.
     public func put<T: Codable>(url: String,
+                                token: String?,
                                 value: T,
                                 cachePolicy: URLRequest.CachePolicy = .useProtocolCachePolicy,
                                 dateDecodingStrategy: JSONDecoder.DateDecodingStrategy = .deferredToDate,
                                 dataDecodingStrategy: JSONDecoder.DataDecodingStrategy = .base64,
                                 keyDecodingStrategy: JSONDecoder.KeyDecodingStrategy = .useDefaultKeys) async throws -> T {
         try await request(url: url,
+                          token: token,
                           httpMethod: .put,
                           cachePolicy: cachePolicy,
                           dateDecodingStrategy: dateDecodingStrategy,
@@ -199,6 +213,7 @@ public final class APIManager {
     
     /// Simple formatted method to PUT data with an ID.
     public func put<M: Codable>(url: String,
+                                token: String?,
                                 id: Int,
                                 value: M,
                                 cachePolicy: URLRequest.CachePolicy = .useProtocolCachePolicy,
@@ -206,6 +221,7 @@ public final class APIManager {
                                 dataDecodingStrategy: JSONDecoder.DataDecodingStrategy = .base64,
                                 keyDecodingStrategy: JSONDecoder.KeyDecodingStrategy = .useDefaultKeys) async throws -> M {
         try await request(url: "\(cleanURL(url))\(id)",
+                          token: token,
                           httpMethod: .put,
                           cachePolicy: cachePolicy,
                           dateDecodingStrategy: dateDecodingStrategy,
@@ -215,12 +231,14 @@ public final class APIManager {
     
     /// Simple formatted method to DELETE data with an ID.
     public func delete<M: Codable>(url: String,
+                                   token: String?,
                                    id: Int,
                                    cachePolicy: URLRequest.CachePolicy = .useProtocolCachePolicy,
                                    dateDecodingStrategy: JSONDecoder.DateDecodingStrategy = .deferredToDate,
                                    dataDecodingStrategy: JSONDecoder.DataDecodingStrategy = .base64,
                                    keyDecodingStrategy: JSONDecoder.KeyDecodingStrategy = .useDefaultKeys) async throws -> M {
-        try await request(url: "\(cleanURL(url))\(id)",
+        try await request(url: "\(cleanURL(url))\(id)", 
+                          token: token,
                           httpMethod: .delete,
                           cachePolicy: cachePolicy,
                           dateDecodingStrategy: dateDecodingStrategy,

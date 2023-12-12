@@ -7,8 +7,8 @@
 
 import Foundation
 
-// MARK: - Welcome
-struct Welcome: Codable {
+// MARK: - RecordData
+struct RecordData: Codable {
     let records: [Record]
 }
 
@@ -23,7 +23,7 @@ struct Fields: Codable {
     let peakSurfSeasonBegins, destinationStateCountry, peakSurfSeasonEnds: String
     let difficultyLevel: Int
     let destination: String
-    let surfBreak: [String]
+    let surfBreak: [SurfBreak]
     let magicSeaweedLink: String
     let photos: [Photo]
     let address: String
@@ -75,4 +75,11 @@ struct Full: Codable {
 
 enum TypeEnum: String, Codable {
     case imageJPEG = "image/jpeg"
+}
+
+enum SurfBreak: String, CaseIterable, Codable {
+    case beachBreak = "Beach Break"
+    case reefBreak = "Reef Break"
+    case pointBreak = "Point Break"
+    case outerBanks = "Outer Banks"
 }

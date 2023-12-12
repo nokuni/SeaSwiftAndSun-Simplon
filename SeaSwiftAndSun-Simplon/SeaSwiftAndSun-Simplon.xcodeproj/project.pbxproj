@@ -18,6 +18,7 @@
 		7B9A2F742B2769AB00D2E498 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A2F732B2769AB00D2E498 /* Model.swift */; };
 		A8E5863C2B275C1A00B5B538 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5863B2B275C1A00B5B538 /* APIManager.swift */; };
 		A8E586402B275E1600B5B538 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5863F2B275E1600B5B538 /* StringExtension.swift */; };
+		A8EC0AE32B28824E00A450A8 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC0AE22B28824E00A450A8 /* UIImageViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		7B9A2F732B2769AB00D2E498 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		A8E5863B2B275C1A00B5B538 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		A8E5863F2B275E1600B5B538 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		A8EC0AE22B28824E00A450A8 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				A8E5863F2B275E1600B5B538 /* StringExtension.swift */,
+				A8EC0AE22B28824E00A450A8 /* UIImageViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				4201DA872B1F7589002A203E /* DetailSpotViewController.swift in Sources */,
 				4201DA732B1F686B002A203E /* ViewController.swift in Sources */,
 				4201DA6F2B1F686B002A203E /* AppDelegate.swift in Sources */,
+				A8EC0AE32B28824E00A450A8 /* UIImageViewExtension.swift in Sources */,
 				4201DA712B1F686B002A203E /* SceneDelegate.swift in Sources */,
 				4201DA832B1F6C28002A203E /* SpotCell.swift in Sources */,
 				7B9A2F742B2769AB00D2E498 /* Model.swift in Sources */,
