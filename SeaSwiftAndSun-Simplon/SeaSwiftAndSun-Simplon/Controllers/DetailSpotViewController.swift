@@ -9,7 +9,7 @@ import UIKit
 
 class DetailSpotViewController: UIViewController {
     @IBOutlet weak var spotImage: UIImageView!
-    
+    var starContainer = UIStackView()
     var spot: Fields?
     
     var surfBreakType: UILabel =  {
@@ -21,7 +21,6 @@ class DetailSpotViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.layer.cornerRadius = 10
         label.layer.masksToBounds = true
-
         return label
     }()
     
@@ -32,7 +31,6 @@ class DetailSpotViewController: UIViewController {
         label.font = UIFont.boldSystemFont(ofSize: 24)
         label.textColor = UIColor.black
         label.translatesAutoresizingMaskIntoConstraints = false
-        
         return label
     }()
     
@@ -76,18 +74,21 @@ class DetailSpotViewController: UIViewController {
         return label
     }()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         if let spot = spot {
-            seasonStart.text = "Season starts: \(spot.peakSurfSeasonBegins)"
-            seasonEnd.text = "Season ends: \(spot.peakSurfSeasonEnds)"
+            
+            let formattedStartDate = DateFormatter.formattedDateFromString(spot.peakSurfSeasonBegins)
+            let formattedEndDate = DateFormatter.formattedDateFromString(spot.peakSurfSeasonEnds)
+            
+            seasonStart.text = "Season starts: \(formattedStartDate)"
+            seasonEnd.text = "Season ends: \(formattedEndDate)"
             spotName.text = spot.destination
             country.text = spot.destinationStateCountry
-            difficultyLevel.text = "Difficulty: \(spot.difficultyLevel)"
+            addDifficultyStars(difficultyLevel: spot.difficultyLevel)
             surfBreakType.text = spot.surfBreak[0].rawValue
-            if let url = getPictureURL(spot: spot) { spotImage.load(url: url) }
             
+            if let url = getPictureURL(spot: spot) { spotImage.load(url: url) }
             
             switch surfBreakType.text {
             case "Beach Break" :
@@ -108,7 +109,6 @@ class DetailSpotViewController: UIViewController {
             }
         }
         
-        setUpUI()
         setUpConstraints()
     }
     
@@ -118,23 +118,65 @@ class DetailSpotViewController: UIViewController {
         return url
     }
     
-    func setUpUI() {
-        //        self.spotImage.layer.cornerRadius = self.spotImage.frame.size.width / 2
-    }
-    
     func setUpConstraints() {
-        let stackView = UIStackView(arrangedSubviews: [surfBreakType, spotName, country, difficultyLevel, seasonStart, seasonEnd])
-        stackView.axis = .vertical
-        stackView.alignment = .center
-        stackView.spacing = 10
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(stackView)
+        let horizontalStackView = UIStackView(arrangedSubviews: [difficultyLevel, starContainer])
+        horizontalStackView.axis = .horizontal
+        horizontalStackView.alignment = .center
+        horizontalStackView.spacing = 10
+        horizontalStackView.translatesAutoresizingMaskIntoConstraints = false
+        
+        let verticalStackView = UIStackView(arrangedSubviews: [spotName, country, horizontalStackView,  seasonStart, seasonEnd, ])
+        verticalStackView.axis = .vertical
+        verticalStackView.alignment = .center
+        verticalStackView.spacing = 10
+        verticalStackView.translatesAutoresizingMaskIntoConstraints = false
+        
+        view.addSubview(verticalStackView)
+        view.addSubview(surfBreakType)
         
         NSLayoutConstraint.activate([
-            stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 200),
-            stackView.widthAnchor.constraint(lessThanOrEqualTo: view.widthAnchor, constant: -40),
-            stackView.heightAnchor.constraint(lessThanOrEqualTo: view.heightAnchor, constant: -40)
+            surfBreakType.widthAnchor.constraint(equalToConstant: 150),
+            surfBreakType.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            surfBreakType.topAnchor.constraint(equalTo: spotImage.bottomAnchor, constant: 30),
+            
+            verticalStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            verticalStackView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 150),
+            verticalStackView.widthAnchor.constraint(lessThanOrEqualTo: view.widthAnchor, constant: -40),
+            verticalStackView.heightAnchor.constraint(lessThanOrEqualTo: view.heightAnchor, constant: -40)
         ])
+    }
+    
+    func addDifficultyStars(difficultyLevel: Int) {
+        let starSize: CGFloat = 20
+        let spacing: CGFloat = 5
+        let starCount = difficultyLevel
+        starContainer.axis = .horizontal
+        starContainer.alignment = .fill
+        starContainer.distribution = .fillEqually
+        starContainer.spacing = spacing
+        starContainer.translatesAutoresizingMaskIntoConstraints = false
+        
+        for _ in 0..<starCount {
+            let starSymbol = UIImage(systemName: "star.fill")
+            let starImageView = UIImageView(image: starSymbol)
+            starImageView.contentMode = .scaleAspectFit
+            starImageView.tintColor = UIColor.init(red: 255/255, green: 172/255, blue: 28/255, alpha: 1.0)
+            starContainer.addArrangedSubview(starImageView)
+            starImageView.widthAnchor.constraint(equalToConstant: starSize).isActive = true
+            starImageView.heightAnchor.constraint(equalToConstant: starSize).isActive = true
+        }
+    }
+}
+
+extension DateFormatter {
+    static func formattedDateFromString(_ dateString: String) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        if let date = dateFormatter.date(from: dateString) {
+            dateFormatter.dateFormat = "MMM d, yyyy"
+            return dateFormatter.string(from: date)
+        } else {
+            return "Invalid date"
+        }
     }
 }
