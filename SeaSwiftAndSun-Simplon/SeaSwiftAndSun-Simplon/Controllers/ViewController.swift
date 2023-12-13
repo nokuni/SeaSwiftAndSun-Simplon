@@ -30,14 +30,14 @@ class ViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-//        DispatchQueue.main.async {
-//            Task {
-//                let data: RecordData = try await self.apiManager.get(url: self.url, token: self.token)
-//                let records = data.records
-//                self.records = records
-//                self.tableView.reloadData()
-//            }
-//        }
+        DispatchQueue.main.async {
+            Task {
+                let data: RecordData = try await self.apiManager.get(url: self.url, token: self.token)
+                let records = data.records
+                self.records = records
+                self.tableView.reloadData()
+            }
+        }
     }
     
     var fields: [Fields] { records.map(\.fields) }
