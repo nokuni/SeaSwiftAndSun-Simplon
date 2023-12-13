@@ -100,6 +100,16 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         cell.setUpCell(field: field)
         return cell
     }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let fields = getSectionFields(section: indexPath.section)
+        let selectedSpot = fields[indexPath.row]
+
+        if let detailVC = storyboard?.instantiateViewController(withIdentifier: "DetailSpotViewController") as? DetailSpotViewController {
+            detailVC.spot = selectedSpot
+            navigationController?.pushViewController(detailVC, animated: true)
+        }
+    }
 }
 
 // MARK: Switch display
