@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SeaSwiftAndSun_Simplon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="SeaSwiftAndSun_Simplon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,7 +113,6 @@
                                             <outlet property="spotImage" destination="iB2-LN-PfI" id="QJo-dL-J9f"/>
                                             <outlet property="spotLocation" destination="bMt-ub-Ax8" id="XmB-ir-MOi"/>
                                             <outlet property="spotName" destination="730-O7-c6b" id="CRu-5k-6vH"/>
-                                            <segue destination="wR1-FD-g1K" kind="show" id="llb-NC-Zl7"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -155,42 +154,28 @@
         <!--Detail Spot View Controller-->
         <scene sceneID="hOS-zN-mGs">
             <objects>
-                <viewController id="wR1-FD-g1K" customClass="DetailSpotViewController" customModule="SeaSwiftAndSun_Simplon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailSpotViewController" id="wR1-FD-g1K" customClass="DetailSpotViewController" customModule="SeaSwiftAndSun_Simplon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JLd-Uq-xkk">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="surfSpot" translatesAutoresizingMaskIntoConstraints="NO" id="mfI-Ii-O5V">
-                                <rect key="frame" x="76" y="103" width="240" height="240"/>
+                                <rect key="frame" x="76" y="59" width="240" height="240"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="mfI-Ii-O5V" secondAttribute="height" multiplier="1:1" id="W1Y-qw-cV0"/>
+                                    <constraint firstAttribute="width" secondItem="mfI-Ii-O5V" secondAttribute="height" multiplier="1:1" id="NaD-tM-ctD"/>
+                                    <constraint firstAttribute="width" secondItem="JLd-Uq-xkk" secondAttribute="width" multiplier="1:1" id="W1Y-qw-cV0"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rockaway Beach" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNk-aY-L2q">
-                                <rect key="frame" x="76.666666666666686" y="351" width="240" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="vbd-1p-8fD"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="37B-wj-XJD"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="zNk-aY-L2q" firstAttribute="width" secondItem="mfI-Ii-O5V" secondAttribute="width" id="2Wp-2b-SWI"/>
-                            <constraint firstItem="37B-wj-XJD" firstAttribute="trailing" secondItem="mfI-Ii-O5V" secondAttribute="trailing" constant="77" id="7PO-B8-JqS"/>
-                            <constraint firstItem="mfI-Ii-O5V" firstAttribute="leading" secondItem="37B-wj-XJD" secondAttribute="leading" constant="76" id="BNE-07-3md"/>
-                            <constraint firstItem="zNk-aY-L2q" firstAttribute="centerX" secondItem="JLd-Uq-xkk" secondAttribute="centerX" id="DVk-x7-Z0Y"/>
-                            <constraint firstItem="zNk-aY-L2q" firstAttribute="top" secondItem="mfI-Ii-O5V" secondAttribute="bottom" constant="8" symbolic="YES" id="FZg-VO-g5s"/>
                             <constraint firstItem="mfI-Ii-O5V" firstAttribute="top" secondItem="37B-wj-XJD" secondAttribute="top" id="qgL-lo-qnE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qeC-Fe-I1x"/>
                     <connections>
                         <outlet property="spotImage" destination="mfI-Ii-O5V" id="mPe-WM-rY2"/>
-                        <outlet property="spotName" destination="zNk-aY-L2q" id="XZ3-CF-wLv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dhm-9c-RtJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -224,7 +209,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
