@@ -133,8 +133,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="qRO-YG-lRL">
                         <nil key="title"/>
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="SbR-pR-05T">
-                            <rect key="frame" x="131" y="6" width="131" height="33"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="SbR-pR-05T">
+                            <rect key="frame" x="131" y="5.6666666666666679" width="131" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
                                 <segment title="List"/>
@@ -167,10 +167,9 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="37B-wj-XJD"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="mfI-Ii-O5V" firstAttribute="top" secondItem="37B-wj-XJD" secondAttribute="top" id="qgL-lo-qnE"/>
+                            <constraint firstItem="mfI-Ii-O5V" firstAttribute="top" secondItem="JLd-Uq-xkk" secondAttribute="top" id="qgL-lo-qnE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qeC-Fe-I1x"/>

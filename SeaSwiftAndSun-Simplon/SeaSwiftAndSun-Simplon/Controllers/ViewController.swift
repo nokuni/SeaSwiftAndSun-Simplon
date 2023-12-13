@@ -107,6 +107,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 
         if let detailVC = storyboard?.instantiateViewController(withIdentifier: "DetailSpotViewController") as? DetailSpotViewController {
             detailVC.spot = selectedSpot
+            let backButton = UIBarButtonItem()
+            backButton.title = "Back"
+            navigationItem.backBarButtonItem = backButton
             navigationController?.pushViewController(detailVC, animated: true)
         }
     }
