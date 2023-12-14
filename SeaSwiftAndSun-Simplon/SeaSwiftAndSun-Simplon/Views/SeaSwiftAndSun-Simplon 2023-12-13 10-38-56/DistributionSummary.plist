@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SeaSwiftAndSun-Simplon.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>buildNumber</key>
+			<string>1</string>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>E74BD0594F7BA17A8EF0F01140A1086F9DB7CE21</string>
+				<key>dateExpires</key>
+				<string>15/06/2024</string>
+				<key>type</key>
+				<string>Apple Development</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>Q6DV6C6352.yann.SeaSwiftAndSun-Simplon</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>Q6DV6C6352</string>
+				<key>get-task-allow</key>
+				<true/>
+			</dict>
+			<key>name</key>
+			<string>SeaSwiftAndSun-Simplon.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>a42424ac-0c31-4e99-8545-6cf65887ebb3</string>
+				<key>dateExpires</key>
+				<string>15/06/2024</string>
+				<key>name</key>
+				<string>iOS Team Provisioning Profile: *</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>Q6DV6C6352</string>
+				<key>name</key>
+				<string>Yann-Christophe Maertens</string>
+			</dict>
+			<key>versionNumber</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+</dict>
+</plist>

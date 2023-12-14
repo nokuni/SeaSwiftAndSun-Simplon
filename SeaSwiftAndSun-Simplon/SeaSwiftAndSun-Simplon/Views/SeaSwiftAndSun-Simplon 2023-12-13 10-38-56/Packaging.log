@@ -1,0 +1,157 @@
+2023-12-13 09:38:50 +0000  Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0x464562da0; archive(resolved)="<IDEArchive: 0x60002aeb9380>", distributionTask(resolved)="2", distributionDestination(resolved)="1", distributionMethod(resolved)="<IDEDistributionMethodDevelopmentSigned: 0x6000148adab0>", team(resolved)="<IDEProvisioningDisambiguatableBasicTeam: 0x6000015470c0; teamID='Q6DV6C6352', teamName='Yann-Christophe Maertens', teamType='Individual', username='iroshinidako@gmail.com', isFreeProvisioningTeam='0'>">
+	Chain (15, self inclusive):
+	<IDEDistributionProcessingPipelineContext: 0x464562da0; archive = "<IDEArchive: 0x60002aeb9380>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x6000148adab0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x6000015470c0; teamID='Q6DV6C6352', teamName='Yann-Christophe Maertens', teamType='Individual', username='iroshinidako@gmail.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionProcessingPipelineContext: 0x464562b00; archive = "<IDEArchive: 0x60002aeb9380>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x6000148adab0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x6000015470c0; teamID='Q6DV6C6352', teamName='Yann-Christophe Maertens', teamType='Individual', username='iroshinidako@gmail.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x4516392d0; archive = "<IDEArchive: 0x60002aeb9380>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x6000148adab0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x6000015470c0; teamID='Q6DV6C6352', teamName='Yann-Christophe Maertens', teamType='Individual', username='iroshinidako@gmail.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x2f634eef0; archive = "<IDEArchive: 0x60002aeb9380>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x6000148adab0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x6000015470c0; teamID='Q6DV6C6352', teamName='Yann-Christophe Maertens', teamType='Individual', username='iroshinidako@gmail.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x460d179a0; archive = "<IDEArchive: 0x60002aeb9380>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x6000148adab0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x6000015470c0; teamID='Q6DV6C6352', teamName='Yann-Christophe Maertens', teamType='Individual', username='iroshinidako@gmail.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x464909170; archive = "<IDEArchive: 0x60002aeb9380>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x6000148adab0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x6000015470c0; teamID='Q6DV6C6352', teamName='Yann-Christophe Maertens', teamType='Individual', username='iroshinidako@gmail.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x451637a10; archive = "<IDEArchive: 0x60002aeb9380>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x6000148adab0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x6000015470c0; teamID='Q6DV6C6352', teamName='Yann-Christophe Maertens', teamType='Individual', username='iroshinidako@gmail.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x451636be0; archive = "<IDEArchive: 0x60002aeb9380>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x6000148adab0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x6000015470c0; teamID='Q6DV6C6352', teamName='Yann-Christophe Maertens', teamType='Individual', username='iroshinidako@gmail.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x465097660; archive = "<IDEArchive: 0x60002aeb9380>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x6000148adab0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x6000015470c0; teamID='Q6DV6C6352', teamName='Yann-Christophe Maertens', teamType='Individual', username='iroshinidako@gmail.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x463f84e20; archive = "<IDEArchive: 0x60002aeb9380>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x6000148adab0>", team="(null)">
+	<IDEDistributionContext: 0x4646f6380; archive = "<IDEArchive: 0x60002aeb9380>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x6000148adab0>", team="(null)">
+	<IDEDistributionContext: 0x2c30d8c40; archive = "<IDEArchive: 0x60002aeb9380>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x6000148adab0>", team="(null)">
+	<IDEDistributionContext: 0x169dc9330; archive = "<IDEArchive: 0x60002aeb9380>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x6000148adab0>", team="(null)">
+	<IDEDistributionContext: 0x2f495a770; archive = "<IDEArchive: 0x60002aeb9380>", distributionMethod="(null)", team="(null)">
+	<IDEDistributionContext: 0x2f478fec0; archive = "<IDEArchive: 0x60002aeb9380>", distributionMethod="(null)", team="(null)">
+</IDEDistributionProcessingPipelineContext: 0x464562da0>
+2023-12-13 09:38:50 +0000  Processing step: IDEDistributionCreateDestRootStep
+2023-12-13 09:38:50 +0000  Processing step: IDEDistributionCopyItemStep
+2023-12-13 09:38:50 +0000  Running /usr/bin/ditto '-V' '/Users/yannchristophemaertens/Library/Developer/Xcode/Archives/2023-12-13/SeaSwiftAndSun-Simplon 13-12-2023, 10.37.xcarchive/Products/Applications/SeaSwiftAndSun-Simplon.app' '/var/folders/j5/9svzcnb52pn1wpd0sz7f27nw0000gn/T/XcodeDistPipeline.~~~6sQuTz/Root/Payload/SeaSwiftAndSun-Simplon.app'
+2023-12-13 09:38:50 +0000  >>> Copying /Users/yannchristophemaertens/Library/Developer/Xcode/Archives/2023-12-13/SeaSwiftAndSun-Simplon 13-12-2023, 10.37.xcarchive/Products/Applications/SeaSwiftAndSun-Simplon.app 
+2023-12-13 09:38:50 +0000  copying file ./_CodeSignature/CodeResources ... 
+2023-12-13 09:38:50 +0000  5177 bytes for ./_CodeSignature/CodeResources
+2023-12-13 09:38:50 +0000  copying file ./SeaSwiftAndSun-Simplon ... 
+2023-12-13 09:38:50 +0000  195904 bytes for ./SeaSwiftAndSun-Simplon
+2023-12-13 09:38:50 +0000  copying file ./AppIcon60x60@2x.png ... 
+2023-12-13 09:38:50 +0000  12318 bytes for ./AppIcon60x60@2x.png
+2023-12-13 09:38:50 +0000  copying file ./Base.lproj/Main.storyboardc/wR1-FD-g1K-view-JLd-Uq-xkk.nib ... 
+2023-12-13 09:38:50 +0000  3883 bytes for ./Base.lproj/Main.storyboardc/wR1-FD-g1K-view-JLd-Uq-xkk.nib
+2023-12-13 09:38:50 +0000  copying file ./Base.lproj/Main.storyboardc/UINavigationController-Zm5-YI-dfj.nib ... 
+2023-12-13 09:38:50 +0000  3005 bytes for ./Base.lproj/Main.storyboardc/UINavigationController-Zm5-YI-dfj.nib
+2023-12-13 09:38:50 +0000  copying file ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib ... 
+2023-12-13 09:38:50 +0000  10826 bytes for ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib
+2023-12-13 09:38:50 +0000  copying file ./Base.lproj/Main.storyboardc/Info.plist ... 
+2023-12-13 09:38:50 +0000  351 bytes for ./Base.lproj/Main.storyboardc/Info.plist
+2023-12-13 09:38:50 +0000  copying file ./Base.lproj/Main.storyboardc/UIViewController-wR1-FD-g1K.nib ... 
+2023-12-13 09:38:50 +0000  1098 bytes for ./Base.lproj/Main.storyboardc/UIViewController-wR1-FD-g1K.nib
+2023-12-13 09:38:50 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib ... 
+2023-12-13 09:38:50 +0000  1225 bytes for ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib
+2023-12-13 09:38:50 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib ... 
+2023-12-13 09:38:50 +0000  924 bytes for ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib
+2023-12-13 09:38:50 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/Info.plist ... 
+2023-12-13 09:38:50 +0000  258 bytes for ./Base.lproj/LaunchScreen.storyboardc/Info.plist
+2023-12-13 09:38:50 +0000  copying file ./Assets.car ... 
+2023-12-13 09:38:50 +0000  1453775 bytes for ./Assets.car
+2023-12-13 09:38:50 +0000  copying file ./AppIcon76x76@2x~ipad.png ... 
+2023-12-13 09:38:50 +0000  17133 bytes for ./AppIcon76x76@2x~ipad.png
+2023-12-13 09:38:50 +0000  copying file ./embedded.mobileprovision ... 
+2023-12-13 09:38:50 +0000  18826 bytes for ./embedded.mobileprovision
+2023-12-13 09:38:50 +0000  copying file ./Info.plist ... 
+2023-12-13 09:38:50 +0000  1594 bytes for ./Info.plist
+2023-12-13 09:38:50 +0000  copying file ./PkgInfo ... 
+2023-12-13 09:38:50 +0000  8 bytes for ./PkgInfo
+2023-12-13 09:38:50 +0000  /usr/bin/ditto exited with 0
+2023-12-13 09:38:50 +0000  Processing step: IDEDistributionEmbedProfileStep
+2023-12-13 09:38:50 +0000  Processing step: IDEDistributionInfoPlistStep
+2023-12-13 09:38:50 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2023-12-13 09:38:50 +0000  Processing step: IDEDistributionAppThinningPlistStep
+2023-12-13 09:38:50 +0000  Skipping step: IDEDistributionAppThinningPlistStep because it said so
+2023-12-13 09:38:50 +0000  Processing step: IDEDistributionCompileBitcodeStep
+2023-12-13 09:38:50 +0000  Skipping step: IDEDistributionCompileBitcodeStep because it said so
+2023-12-13 09:38:50 +0000  Processing step: IDEDistributionCodeSlimmingStep
+2023-12-13 09:38:50 +0000  Processing step: IDEDistributionCopyBCSymbolMapsStep
+2023-12-13 09:38:50 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2023-12-13 09:38:50 +0000  Processing step: IDEDistributionSymbolsStep
+2023-12-13 09:38:50 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2023-12-13 09:38:50 +0000  Processing step: IDEDistributionAppThinningStep
+2023-12-13 09:38:50 +0000  Skipping step: IDEDistributionAppThinningStep because it said so
+2023-12-13 09:38:50 +0000  Processing step: IDEDistributionArchThinningStep
+2023-12-13 09:38:50 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/j5/9svzcnb52pn1wpd0sz7f27nw0000gn/T/XcodeDistPipeline.~~~6sQuTz/Root/Payload/SeaSwiftAndSun-Simplon.app/SeaSwiftAndSun-Simplon' '-verify_arch' 'arm64e'
+2023-12-13 09:38:50 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2023-12-13 09:38:50 +0000  Skipping architecture thinning for item "SeaSwiftAndSun-Simplon" because arch "arm64e" wasn't found
+2023-12-13 09:38:50 +0000  Processing step: IDEDistributionODRStep
+2023-12-13 09:38:50 +0000  Processing step: IDEDistributionStripXattrsStep
+2023-12-13 09:38:50 +0000  Skipping stripping extended attributes because the codesign step will strip them.
+2023-12-13 09:38:50 +0000  Processing step: IDEDistributionCodesignStep
+2023-12-13 09:38:50 +0000  Entitlements for <IDEDistributionItem: 0x6000260e9080; bundleID='yann.SeaSwiftAndSun-Simplon', path='<DVTFilePath:0x60001653dc80:'/Users/yannchristophemaertens/Library/Developer/Xcode/Archives/2023-12-13/SeaSwiftAndSun-Simplon 13-12-2023, 10.37.xcarchive/Products/Applications/SeaSwiftAndSun-Simplon.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x60003a901a90; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x600023f3c9c0; name='Apple Development: Yann-Christophe Maertens (NUUZKU6L3A)', hash='E74BD0594F7BA17A8EF0F01140A1086F9DB7CE21', serialNumber='54338D6ABCBD1A7287DA23F8A219730D', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-06-16 20:58:07 +0000''>', entitlements='{
+    "application-identifier" = "Q6DV6C6352.yann.SeaSwiftAndSun-Simplon";
+    "com.apple.developer.team-identifier" = Q6DV6C6352;
+    "get-task-allow" = 1;
+}', teamID='Q6DV6C6352', identifier='yann.SeaSwiftAndSun-Simplon', executablePath='<DVTFilePath:0x60002a2fc8c0:'/Users/yannchristophemaertens/Library/Developer/Xcode/Archives/2023-12-13/SeaSwiftAndSun-Simplon 13-12-2023, 10.37.xcarchive/Products/Applications/SeaSwiftAndSun-Simplon.app/SeaSwiftAndSun-Simplon'>', hardenedRuntime='0'>'>: {
+    "application-identifier" = "Q6DV6C6352.yann.SeaSwiftAndSun-Simplon";
+    "com.apple.developer.team-identifier" = Q6DV6C6352;
+    "get-task-allow" = 1;
+}
+2023-12-13 09:38:50 +0000  Associated App Clip Identifiers Filter: Skipping because "com.apple.developer.associated-appclip-app-identifiers" is not present
+2023-12-13 09:38:50 +0000  Entitlements for <IDEDistributionItem: 0x6000260e9080; bundleID='yann.SeaSwiftAndSun-Simplon', path='<DVTFilePath:0x60001653dc80:'/Users/yannchristophemaertens/Library/Developer/Xcode/Archives/2023-12-13/SeaSwiftAndSun-Simplon 13-12-2023, 10.37.xcarchive/Products/Applications/SeaSwiftAndSun-Simplon.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x60003a901a90; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x600023f3c780; name='Apple Development: Yann-Christophe Maertens (NUUZKU6L3A)', hash='E74BD0594F7BA17A8EF0F01140A1086F9DB7CE21', serialNumber='54338D6ABCBD1A7287DA23F8A219730D', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-06-16 20:58:07 +0000''>', entitlements='{
+    "application-identifier" = "Q6DV6C6352.yann.SeaSwiftAndSun-Simplon";
+    "com.apple.developer.team-identifier" = Q6DV6C6352;
+    "get-task-allow" = 1;
+}', teamID='Q6DV6C6352', identifier='yann.SeaSwiftAndSun-Simplon', executablePath='<DVTFilePath:0x60002a2fc8c0:'/Users/yannchristophemaertens/Library/Developer/Xcode/Archives/2023-12-13/SeaSwiftAndSun-Simplon 13-12-2023, 10.37.xcarchive/Products/Applications/SeaSwiftAndSun-Simplon.app/SeaSwiftAndSun-Simplon'>', hardenedRuntime='0'>'> are: {
+    "application-identifier" = "Q6DV6C6352.yann.SeaSwiftAndSun-Simplon";
+    "com.apple.developer.team-identifier" = Q6DV6C6352;
+    "get-task-allow" = 1;
+}
+2023-12-13 09:38:50 +0000  Writing entitlements for <IDEDistributionItem: 0x6000260e9080; bundleID='yann.SeaSwiftAndSun-Simplon', path='<DVTFilePath:0x60001653dc80:'/Users/yannchristophemaertens/Library/Developer/Xcode/Archives/2023-12-13/SeaSwiftAndSun-Simplon 13-12-2023, 10.37.xcarchive/Products/Applications/SeaSwiftAndSun-Simplon.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x60003a901a90; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60001303c780; name='Apple Development: Yann-Christophe Maertens (NUUZKU6L3A)', hash='E74BD0594F7BA17A8EF0F01140A1086F9DB7CE21', serialNumber='54338D6ABCBD1A7287DA23F8A219730D', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2023-06-16 20:58:07 +0000''>', entitlements='{
+    "application-identifier" = "Q6DV6C6352.yann.SeaSwiftAndSun-Simplon";
+    "com.apple.developer.team-identifier" = Q6DV6C6352;
+    "get-task-allow" = 1;
+}', teamID='Q6DV6C6352', identifier='yann.SeaSwiftAndSun-Simplon', executablePath='<DVTFilePath:0x60002a2fc8c0:'/Users/yannchristophemaertens/Library/Developer/Xcode/Archives/2023-12-13/SeaSwiftAndSun-Simplon 13-12-2023, 10.37.xcarchive/Products/Applications/SeaSwiftAndSun-Simplon.app/SeaSwiftAndSun-Simplon'>', hardenedRuntime='0'>'> to: /var/folders/j5/9svzcnb52pn1wpd0sz7f27nw0000gn/T/XcodeDistPipeline.~~~6sQuTz/entitlements~~~LrGOpA
+2023-12-13 09:38:50 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'E74BD0594F7BA17A8EF0F01140A1086F9DB7CE21' '--entitlements' '/var/folders/j5/9svzcnb52pn1wpd0sz7f27nw0000gn/T/XcodeDistPipeline.~~~6sQuTz/entitlements~~~LrGOpA' '--generate-entitlement-der' '--preserve-metadata=identifier,flags,runtime' '/var/folders/j5/9svzcnb52pn1wpd0sz7f27nw0000gn/T/XcodeDistPipeline.~~~6sQuTz/Root/Payload/SeaSwiftAndSun-Simplon.app'
+2023-12-13 09:38:50 +0000  /var/folders/j5/9svzcnb52pn1wpd0sz7f27nw0000gn/T/XcodeDistPipeline.~~~6sQuTz/Root/Payload/SeaSwiftAndSun-Simplon.app: replacing existing signature
+2023-12-13 09:38:50 +0000  /var/folders/j5/9svzcnb52pn1wpd0sz7f27nw0000gn/T/XcodeDistPipeline.~~~6sQuTz/Root/Payload/SeaSwiftAndSun-Simplon.app: signed app bundle with Mach-O thin (arm64) [yann.SeaSwiftAndSun-Simplon]
+2023-12-13 09:38:50 +0000  /usr/bin/codesign exited with 0
+2023-12-13 09:38:50 +0000  Processing step: IDEDistributionZipODRItemStep
+2023-12-13 09:38:50 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2023-12-13 09:38:50 +0000  Processing step: IDEDistributionCreateIPAStep
+2023-12-13 09:38:50 +0000  Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/j5/9svzcnb52pn1wpd0sz7f27nw0000gn/T/XcodeDistPipeline.~~~6sQuTz/Root' '/var/folders/j5/9svzcnb52pn1wpd0sz7f27nw0000gn/T/XcodeDistPipeline.~~~6sQuTz/Packages/SeaSwiftAndSun-Simplon.ipa'
+2023-12-13 09:38:50 +0000  >>> Copying /var/folders/j5/9svzcnb52pn1wpd0sz7f27nw0000gn/T/XcodeDistPipeline.~~~6sQuTz/Root 
+2023-12-13 09:38:50 +0000  copying file ./Payload/SeaSwiftAndSun-Simplon.app/_CodeSignature/CodeResources ... 
+2023-12-13 09:38:50 +0000  5177 bytes for ./Payload/SeaSwiftAndSun-Simplon.app/_CodeSignature/CodeResources
+2023-12-13 09:38:50 +0000  copying file ./Payload/SeaSwiftAndSun-Simplon.app/SeaSwiftAndSun-Simplon ... 
+2023-12-13 09:38:50 +0000  195904 bytes for ./Payload/SeaSwiftAndSun-Simplon.app/SeaSwiftAndSun-Simplon
+2023-12-13 09:38:50 +0000  copying file ./Payload/SeaSwiftAndSun-Simplon.app/AppIcon60x60@2x.png ... 
+2023-12-13 09:38:50 +0000  12318 bytes for ./Payload/SeaSwiftAndSun-Simplon.app/AppIcon60x60@2x.png
+2023-12-13 09:38:50 +0000  copying file ./Payload/SeaSwiftAndSun-Simplon.app/Base.lproj/Main.storyboardc/wR1-FD-g1K-view-JLd-Uq-xkk.nib ... 
+2023-12-13 09:38:50 +0000  3883 bytes for ./Payload/SeaSwiftAndSun-Simplon.app/Base.lproj/Main.storyboardc/wR1-FD-g1K-view-JLd-Uq-xkk.nib
+2023-12-13 09:38:50 +0000  copying file ./Payload/SeaSwiftAndSun-Simplon.app/Base.lproj/Main.storyboardc/UINavigationController-Zm5-YI-dfj.nib ... 
+2023-12-13 09:38:50 +0000  3005 bytes for ./Payload/SeaSwiftAndSun-Simplon.app/Base.lproj/Main.storyboardc/UINavigationController-Zm5-YI-dfj.nib
+2023-12-13 09:38:50 +0000  copying file ./Payload/SeaSwiftAndSun-Simplon.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib ... 
+2023-12-13 09:38:50 +0000  10826 bytes for ./Payload/SeaSwiftAndSun-Simplon.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib
+2023-12-13 09:38:50 +0000  copying file ./Payload/SeaSwiftAndSun-Simplon.app/Base.lproj/Main.storyboardc/Info.plist ... 
+2023-12-13 09:38:50 +0000  351 bytes for ./Payload/SeaSwiftAndSun-Simplon.app/Base.lproj/Main.storyboardc/Info.plist
+copying file ./Payload/SeaSwiftAndSun-Simplon.app/Base.lproj/Main.storyboardc/UIViewController-wR1-FD-g1K.nib ... 
+2023-12-13 09:38:50 +0000  1098 bytes for ./Payload/SeaSwiftAndSun-Simplon.app/Base.lproj/Main.storyboardc/UIViewController-wR1-FD-g1K.nib
+2023-12-13 09:38:50 +0000  copying file ./Payload/SeaSwiftAndSun-Simplon.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib ... 
+2023-12-13 09:38:50 +0000  1225 bytes for ./Payload/SeaSwiftAndSun-Simplon.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib
+2023-12-13 09:38:50 +0000  copying file ./Payload/SeaSwiftAndSun-Simplon.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib ... 
+2023-12-13 09:38:50 +0000  924 bytes for ./Payload/SeaSwiftAndSun-Simplon.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib
+2023-12-13 09:38:50 +0000  copying file ./Payload/SeaSwiftAndSun-Simplon.app/Base.lproj/LaunchScreen.storyboardc/Info.plist ... 
+2023-12-13 09:38:50 +0000  258 bytes for ./Payload/SeaSwiftAndSun-Simplon.app/Base.lproj/LaunchScreen.storyboardc/Info.plist
+copying file ./Payload/SeaSwiftAndSun-Simplon.app/Assets.car ... 
+2023-12-13 09:38:50 +0000  1453775 bytes for ./Payload/SeaSwiftAndSun-Simplon.app/Assets.car
+2023-12-13 09:38:50 +0000  copying file ./Payload/SeaSwiftAndSun-Simplon.app/AppIcon76x76@2x~ipad.png ... 
+2023-12-13 09:38:50 +0000  17133 bytes for ./Payload/SeaSwiftAndSun-Simplon.app/AppIcon76x76@2x~ipad.png
+2023-12-13 09:38:50 +0000  copying file ./Payload/SeaSwiftAndSun-Simplon.app/embedded.mobileprovision ... 
+2023-12-13 09:38:50 +0000  18826 bytes for ./Payload/SeaSwiftAndSun-Simplon.app/embedded.mobileprovision
+2023-12-13 09:38:50 +0000  copying file ./Payload/SeaSwiftAndSun-Simplon.app/Info.plist ... 
+2023-12-13 09:38:50 +0000  1594 bytes for ./Payload/SeaSwiftAndSun-Simplon.app/Info.plist
+2023-12-13 09:38:50 +0000  copying file ./Payload/SeaSwiftAndSun-Simplon.app/PkgInfo ... 
+8 bytes for ./Payload/SeaSwiftAndSun-Simplon.app/PkgInfo
+2023-12-13 09:38:50 +0000  /usr/bin/ditto exited with 0
+2023-12-13 09:38:50 +0000  Processing step: IDEDistributionAppStoreInformationStep
+2023-12-13 09:38:50 +0000  Skipping step: IDEDistributionAppStoreInformationStep because it said so
+2023-12-13 09:38:50 +0000  Processing step: IDEDistributionGenerateProcessedDistributionItems
+2023-12-13 09:38:50 +0000  IDEDistributionItem init <DVTFilePath:0x6000165d3700:'/var/folders/j5/9svzcnb52pn1wpd0sz7f27nw0000gn/T/XcodeDistPipeline.~~~6sQuTz/Root/Payload/SeaSwiftAndSun-Simplon.app'>
+2023-12-13 09:38:50 +0000  Processing step: IDEDistributionCreateManifestStep

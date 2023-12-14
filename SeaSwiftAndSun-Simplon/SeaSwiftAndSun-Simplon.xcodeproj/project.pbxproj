@@ -15,11 +15,28 @@
 		4201DA7B2B1F686E002A203E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4201DA792B1F686E002A203E /* LaunchScreen.storyboard */; };
 		4201DA832B1F6C28002A203E /* SpotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201DA822B1F6C28002A203E /* SpotCell.swift */; };
 		4201DA872B1F7589002A203E /* DetailSpotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201DA862B1F7589002A203E /* DetailSpotViewController.swift */; };
+		7B9A2F822B2894BB00D2E498 /* SeaSwiftAndSun_SimplonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A2F812B2894BB00D2E498 /* SeaSwiftAndSun_SimplonTests.swift */; };
+		7B9A2F892B2894DA00D2E498 /* ApiManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A2F882B2894DA00D2E498 /* ApiManagerTests.swift */; };
+		7B9A2F8B2B28950700D2E498 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A2F8A2B28950700D2E498 /* ViewControllerTests.swift */; };
+		7B9A2F8D2B28952100D2E498 /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A2F8C2B28952100D2E498 /* ExtensionTests.swift */; };
 		A841DA1A2B2891480036DE4F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A841DA192B2891480036DE4F /* Model.swift */; };
 		A841DA1C2B28914F0036DE4F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A841DA1B2B28914F0036DE4F /* APIManager.swift */; };
+		A876ACFE2B28A05600A11E21 /* XCTestCaseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A876ACFD2B28A05600A11E21 /* XCTestCaseExtension.swift */; };
+		A8DA15132B28B88E006DF178 /* ViewDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DA15122B28B88E006DF178 /* ViewDisplay.swift */; };
+		A8DA15152B28BACA006DF178 /* SpotCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DA15142B28BACA006DF178 /* SpotCard.swift */; };
 		A8E586402B275E1600B5B538 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5863F2B275E1600B5B538 /* StringExtension.swift */; };
 		A8EC0AE32B28824E00A450A8 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC0AE22B28824E00A450A8 /* UIImageViewExtension.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B9A2F832B2894BB00D2E498 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4201DA632B1F686B002A203E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4201DA6A2B1F686B002A203E;
+			remoteInfo = "SeaSwiftAndSun-Simplon";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4201DA6B2B1F686B002A203E /* SeaSwiftAndSun-Simplon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SeaSwiftAndSun-Simplon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,8 +49,17 @@
 		4201DA7C2B1F686E002A203E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4201DA822B1F6C28002A203E /* SpotCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotCell.swift; sourceTree = "<group>"; };
 		4201DA862B1F7589002A203E /* DetailSpotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSpotViewController.swift; sourceTree = "<group>"; };
+		7B9A2F7F2B2894BB00D2E498 /* SeaSwiftAndSun-SimplonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SeaSwiftAndSun-SimplonTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B9A2F812B2894BB00D2E498 /* SeaSwiftAndSun_SimplonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaSwiftAndSun_SimplonTests.swift; sourceTree = "<group>"; };
+		7B9A2F882B2894DA00D2E498 /* ApiManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManagerTests.swift; sourceTree = "<group>"; };
+		7B9A2F8A2B28950700D2E498 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
+		7B9A2F8C2B28952100D2E498 /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
 		A841DA192B2891480036DE4F /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		A841DA1B2B28914F0036DE4F /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		A876ACFA2B289E6600A11E21 /* SeaSwiftAndSun-Simplon.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "SeaSwiftAndSun-Simplon.xctestplan"; sourceTree = "<group>"; };
+		A876ACFD2B28A05600A11E21 /* XCTestCaseExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCaseExtension.swift; sourceTree = "<group>"; };
+		A8DA15122B28B88E006DF178 /* ViewDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDisplay.swift; sourceTree = "<group>"; };
+		A8DA15142B28BACA006DF178 /* SpotCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotCard.swift; sourceTree = "<group>"; };
 		A8E5863F2B275E1600B5B538 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		A8EC0AE22B28824E00A450A8 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -46,13 +72,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7B9A2F7C2B2894BB00D2E498 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		4201DA622B1F686B002A203E = {
 			isa = PBXGroup;
 			children = (
+				A876ACFA2B289E6600A11E21 /* SeaSwiftAndSun-Simplon.xctestplan */,
 				4201DA6D2B1F686B002A203E /* SeaSwiftAndSun-Simplon */,
+				7B9A2F802B2894BB00D2E498 /* SeaSwiftAndSun-SimplonTests */,
 				4201DA6C2B1F686B002A203E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				4201DA6B2B1F686B002A203E /* SeaSwiftAndSun-Simplon.app */,
+				7B9A2F7F2B2894BB00D2E498 /* SeaSwiftAndSun-SimplonTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				4201DA822B1F6C28002A203E /* SpotCell.swift */,
+				A8DA15142B28BACA006DF178 /* SpotCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -103,8 +140,21 @@
 			isa = PBXGroup;
 			children = (
 				A841DA192B2891480036DE4F /* Model.swift */,
+				A8DA15122B28B88E006DF178 /* ViewDisplay.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7B9A2F802B2894BB00D2E498 /* SeaSwiftAndSun-SimplonTests */ = {
+			isa = PBXGroup;
+			children = (
+				7B9A2F812B2894BB00D2E498 /* SeaSwiftAndSun_SimplonTests.swift */,
+				7B9A2F882B2894DA00D2E498 /* ApiManagerTests.swift */,
+				7B9A2F8A2B28950700D2E498 /* ViewControllerTests.swift */,
+				7B9A2F8C2B28952100D2E498 /* ExtensionTests.swift */,
+				A876ACFD2B28A05600A11E21 /* XCTestCaseExtension.swift */,
+			);
+			path = "SeaSwiftAndSun-SimplonTests";
 			sourceTree = "<group>";
 		};
 		A8E5863D2B275DF000B5B538 /* Extensions */ = {
@@ -137,6 +187,24 @@
 			productReference = 4201DA6B2B1F686B002A203E /* SeaSwiftAndSun-Simplon.app */;
 			productType = "com.apple.product-type.application";
 		};
+		7B9A2F7E2B2894BB00D2E498 /* SeaSwiftAndSun-SimplonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B9A2F872B2894BB00D2E498 /* Build configuration list for PBXNativeTarget "SeaSwiftAndSun-SimplonTests" */;
+			buildPhases = (
+				7B9A2F7B2B2894BB00D2E498 /* Sources */,
+				7B9A2F7C2B2894BB00D2E498 /* Frameworks */,
+				7B9A2F7D2B2894BB00D2E498 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B9A2F842B2894BB00D2E498 /* PBXTargetDependency */,
+			);
+			name = "SeaSwiftAndSun-SimplonTests";
+			productName = "SeaSwiftAndSun-SimplonTests";
+			productReference = 7B9A2F7F2B2894BB00D2E498 /* SeaSwiftAndSun-SimplonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -149,6 +217,10 @@
 				TargetAttributes = {
 					4201DA6A2B1F686B002A203E = {
 						CreatedOnToolsVersion = 15.0.1;
+					};
+					7B9A2F7E2B2894BB00D2E498 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 4201DA6A2B1F686B002A203E;
 					};
 				};
 			};
@@ -166,6 +238,7 @@
 			projectRoot = "";
 			targets = (
 				4201DA6A2B1F686B002A203E /* SeaSwiftAndSun-Simplon */,
+				7B9A2F7E2B2894BB00D2E498 /* SeaSwiftAndSun-SimplonTests */,
 			);
 		};
 /* End PBXProject section */
@@ -181,6 +254,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7B9A2F7D2B2894BB00D2E498 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -188,9 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8DA15152B28BACA006DF178 /* SpotCard.swift in Sources */,
 				A8E586402B275E1600B5B538 /* StringExtension.swift in Sources */,
 				4201DA872B1F7589002A203E /* DetailSpotViewController.swift in Sources */,
 				4201DA732B1F686B002A203E /* ViewController.swift in Sources */,
+				A8DA15132B28B88E006DF178 /* ViewDisplay.swift in Sources */,
 				A841DA1C2B28914F0036DE4F /* APIManager.swift in Sources */,
 				4201DA6F2B1F686B002A203E /* AppDelegate.swift in Sources */,
 				A8EC0AE32B28824E00A450A8 /* UIImageViewExtension.swift in Sources */,
@@ -200,7 +282,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7B9A2F7B2B2894BB00D2E498 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B9A2F8B2B28950700D2E498 /* ViewControllerTests.swift in Sources */,
+				7B9A2F892B2894DA00D2E498 /* ApiManagerTests.swift in Sources */,
+				7B9A2F822B2894BB00D2E498 /* SeaSwiftAndSun_SimplonTests.swift in Sources */,
+				A876ACFE2B28A05600A11E21 /* XCTestCaseExtension.swift in Sources */,
+				7B9A2F8D2B28952100D2E498 /* ExtensionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B9A2F842B2894BB00D2E498 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4201DA6A2B1F686B002A203E /* SeaSwiftAndSun-Simplon */;
+			targetProxy = 7B9A2F832B2894BB00D2E498 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4201DA742B1F686B002A203E /* Main.storyboard */ = {
@@ -347,10 +449,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6FH7WNJPHQ;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = Q6DV6C6352;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SeaSwiftAndSun-Simplon/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = FindWave;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -359,8 +463,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.amandinecousin.SeaSwiftAndSun-Simplon";
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yann.SeaSwiftAndSun-Simplon";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -377,10 +481,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6FH7WNJPHQ;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = Q6DV6C6352;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SeaSwiftAndSun-Simplon/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = FindWave;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -389,8 +495,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.amandinecousin.SeaSwiftAndSun-Simplon";
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yann.SeaSwiftAndSun-Simplon";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -398,6 +504,42 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		7B9A2F852B2894BB00D2E498 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q6DV6C6352;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ameliepocchiolo.SeaSwiftAndSun-SimplonTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeaSwiftAndSun-Simplon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SeaSwiftAndSun-Simplon";
+			};
+			name = Debug;
+		};
+		7B9A2F862B2894BB00D2E498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q6DV6C6352;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ameliepocchiolo.SeaSwiftAndSun-SimplonTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeaSwiftAndSun-Simplon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SeaSwiftAndSun-Simplon";
 			};
 			name = Release;
 		};
@@ -418,6 +560,15 @@
 			buildConfigurations = (
 				4201DA802B1F686E002A203E /* Debug */,
 				4201DA812B1F686E002A203E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B9A2F872B2894BB00D2E498 /* Build configuration list for PBXNativeTarget "SeaSwiftAndSun-SimplonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B9A2F852B2894BB00D2E498 /* Debug */,
+				7B9A2F862B2894BB00D2E498 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
