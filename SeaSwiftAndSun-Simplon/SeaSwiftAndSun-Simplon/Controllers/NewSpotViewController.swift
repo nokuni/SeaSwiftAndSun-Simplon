@@ -11,9 +11,9 @@ import UIKit
 class NewSpotViewController: UIViewController {
     var spot: Fields?
     let apiManager = APIManager()
-    let url = "https://api.airtable.com/v0/appJb2nxf0V8aeRTB/Surf%20Destinations"
-    let token = "pat2keiWxb6l2mlGK.ade11fc5e7b546c7e420e0d663a966c9a043928156186a23d3958bc75ada2af6"
-    
+    let url = "https://api.airtable.com/v0/appLwnyGpn1sS3QSc/Surf%20Destinations"
+    let token = "patKTpR8A45bdjdCl.e09bf84bc75e3c079b6ceda4de5abe8a2ee4bda1a82c268f98cb4667494b20dd"
+
     let destinationName: StyledTextField = {
         let textField = StyledTextField()
         textField.label.text = "Destination Name"
