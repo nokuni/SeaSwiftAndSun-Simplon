@@ -15,6 +15,9 @@
 		4201DA7B2B1F686E002A203E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4201DA792B1F686E002A203E /* LaunchScreen.storyboard */; };
 		4201DA832B1F6C28002A203E /* SpotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201DA822B1F6C28002A203E /* SpotCell.swift */; };
 		4201DA872B1F7589002A203E /* DetailSpotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201DA862B1F7589002A203E /* DetailSpotViewController.swift */; };
+		7B595F5C2B2B0D9C00F196A5 /* StyledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B595F5B2B2B0D9C00F196A5 /* StyledButton.swift */; };
+		7B7BFF0E2B2A072100D7DC22 /* NewSpotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7BFF0D2B2A072100D7DC22 /* NewSpotViewController.swift */; };
+		7B7BFF102B2A0A9300D7DC22 /* StyledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7BFF0F2B2A0A9300D7DC22 /* StyledTextField.swift */; };
 		7B9A2F822B2894BB00D2E498 /* SeaSwiftAndSun_SimplonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A2F812B2894BB00D2E498 /* SeaSwiftAndSun_SimplonTests.swift */; };
 		7B9A2F892B2894DA00D2E498 /* ApiManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A2F882B2894DA00D2E498 /* ApiManagerTests.swift */; };
 		7B9A2F8B2B28950700D2E498 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A2F8A2B28950700D2E498 /* ViewControllerTests.swift */; };
@@ -49,6 +52,9 @@
 		4201DA7C2B1F686E002A203E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4201DA822B1F6C28002A203E /* SpotCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotCell.swift; sourceTree = "<group>"; };
 		4201DA862B1F7589002A203E /* DetailSpotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSpotViewController.swift; sourceTree = "<group>"; };
+		7B595F5B2B2B0D9C00F196A5 /* StyledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledButton.swift; sourceTree = "<group>"; };
+		7B7BFF0D2B2A072100D7DC22 /* NewSpotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSpotViewController.swift; sourceTree = "<group>"; };
+		7B7BFF0F2B2A0A9300D7DC22 /* StyledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledTextField.swift; sourceTree = "<group>"; };
 		7B9A2F7F2B2894BB00D2E498 /* SeaSwiftAndSun-SimplonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SeaSwiftAndSun-SimplonTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B9A2F812B2894BB00D2E498 /* SeaSwiftAndSun_SimplonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaSwiftAndSun_SimplonTests.swift; sourceTree = "<group>"; };
 		7B9A2F882B2894DA00D2E498 /* ApiManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManagerTests.swift; sourceTree = "<group>"; };
@@ -123,6 +129,7 @@
 			children = (
 				4201DA722B1F686B002A203E /* ViewController.swift */,
 				4201DA862B1F7589002A203E /* DetailSpotViewController.swift */,
+				7B7BFF0D2B2A072100D7DC22 /* NewSpotViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -163,6 +170,8 @@
 				A841DA1B2B28914F0036DE4F /* APIManager.swift */,
 				A8E5863F2B275E1600B5B538 /* StringExtension.swift */,
 				A8EC0AE22B28824E00A450A8 /* UIImageViewExtension.swift */,
+				7B7BFF0F2B2A0A9300D7DC22 /* StyledTextField.swift */,
+				7B595F5B2B2B0D9C00F196A5 /* StyledButton.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -273,11 +282,14 @@
 				4201DA872B1F7589002A203E /* DetailSpotViewController.swift in Sources */,
 				4201DA732B1F686B002A203E /* ViewController.swift in Sources */,
 				A8DA15132B28B88E006DF178 /* ViewDisplay.swift in Sources */,
+				7B7BFF0E2B2A072100D7DC22 /* NewSpotViewController.swift in Sources */,
 				A841DA1C2B28914F0036DE4F /* APIManager.swift in Sources */,
 				4201DA6F2B1F686B002A203E /* AppDelegate.swift in Sources */,
 				A8EC0AE32B28824E00A450A8 /* UIImageViewExtension.swift in Sources */,
 				4201DA712B1F686B002A203E /* SceneDelegate.swift in Sources */,
 				4201DA832B1F6C28002A203E /* SpotCell.swift in Sources */,
+				7B7BFF102B2A0A9300D7DC22 /* StyledTextField.swift in Sources */,
+				7B595F5C2B2B0D9C00F196A5 /* StyledButton.swift in Sources */,
 				A841DA1A2B2891480036DE4F /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

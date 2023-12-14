@@ -113,7 +113,7 @@ class DetailSpotViewController: UIViewController {
     }
     
     func getPictureURL(spot: Fields) -> URL? {
-        guard let urlString = spot.photos.first?.url,
+        guard let urlString = spot.photos?.first?.url,
               let url = URL(string: urlString) else { return nil }
         return url
     }

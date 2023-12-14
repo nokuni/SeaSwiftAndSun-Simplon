@@ -14,7 +14,7 @@ class SpotCell: UITableViewCell {
     @IBOutlet weak var spotDifficulty: UILabel!
     
     func pictureURL(field: Fields) -> URL? {
-        guard let urlString = field.photos.first?.url,
+        guard let urlString = field.photos?.first?.url,
               let url = URL(string: urlString) else { return nil }
         return url
     }
