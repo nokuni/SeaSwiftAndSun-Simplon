@@ -43,9 +43,8 @@ public final class APIManager {
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
             request.addValue("application/json", forHTTPHeaderField: "Accept")
         }
-        if httpMethod == .get {
-            request.addValue( "Bearer " + (token ?? ""), forHTTPHeaderField: "Authorization")
-        }
+        
+        request.addValue( "Bearer " + (token ?? ""), forHTTPHeaderField: "Authorization")
         
         return request
     }
@@ -91,9 +90,18 @@ public final class APIManager {
                                          decoder: JSONDecoder) async throws -> T {
         do {
             let data = try await requestedData(request: request).data
+            
+            //            Useful for debug if we don't decode well.
+            //            if let dataString = String(data: data, encoding: .utf8) {
+            //                print("Received data: \(dataString)")
+            //            } else {
+            //                print("Unable to convert data to string")
+            //            }
+            
             return try decoder.decode(T.self, from: data)
-        } catch {
-            throw APIError.decoding.rawValue
+            
+        } catch let error {
+            throw error
         }
     }
     
@@ -145,7 +153,7 @@ public final class APIManager {
                                 dateDecodingStrategy: JSONDecoder.DateDecodingStrategy = .deferredToDate,
                                 dataDecodingStrategy: JSONDecoder.DataDecodingStrategy = .base64,
                                 keyDecodingStrategy: JSONDecoder.KeyDecodingStrategy = .useDefaultKeys) async throws -> T {
-        try await request(url: url, 
+        try await request(url: url,
                           token: token,
                           httpMethod: .get,
                           key: key,
@@ -187,6 +195,7 @@ public final class APIManager {
                                  keyDecodingStrategy: JSONDecoder.KeyDecodingStrategy = .useDefaultKeys) async throws -> T {
         try await request(url: url,
                           token: token,
+                          value: value,
                           httpMethod: .post,
                           cachePolicy: cachePolicy,
                           dateDecodingStrategy: dateDecodingStrategy,
@@ -237,7 +246,7 @@ public final class APIManager {
                                    dateDecodingStrategy: JSONDecoder.DateDecodingStrategy = .deferredToDate,
                                    dataDecodingStrategy: JSONDecoder.DataDecodingStrategy = .base64,
                                    keyDecodingStrategy: JSONDecoder.KeyDecodingStrategy = .useDefaultKeys) async throws -> M {
-        try await request(url: "\(cleanURL(url))\(id)", 
+        try await request(url: "\(cleanURL(url))\(id)",
                           token: token,
                           httpMethod: .delete,
                           cachePolicy: cachePolicy,

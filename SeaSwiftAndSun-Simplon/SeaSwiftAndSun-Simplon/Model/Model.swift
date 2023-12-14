@@ -20,32 +20,32 @@ public struct RecordData: Codable {
 // MARK: - Record
 public struct Record: Codable {
     
-    public init(id: String, 
-                createdTime: String,
+    public init(id: String? = nil,
+                createdTime: String? = nil,
                 fields: Fields) {
         self.id = id
         self.createdTime = createdTime
         self.fields = fields
     }
     
-    let id, createdTime: String
+    let id, createdTime: String?
     let fields: Fields
 }
 
 // MARK: - Fields
 public struct Fields: Codable {
     
-    public init(peakSurfSeasonBegins: String, 
-                destinationStateCountry: String,
+    public init(peakSurfSeasonBegins: String,
+                destinationStateCountry: String?,
                 peakSurfSeasonEnds: String,
                 difficultyLevel: Int,
                 destination: String,
                 surfBreak: [SurfBreak],
-                magicSeaweedLink: String,
+                magicSeaweedLink: String?,
                 photos: [Photo],
-                address: String,
-                influencers: [Influencer]?,
-                travellers: [String]?) {
+                address: String?,
+                influencers: [String]?)
+    {
         self.peakSurfSeasonBegins = peakSurfSeasonBegins
         self.destinationStateCountry = destinationStateCountry
         self.peakSurfSeasonEnds = peakSurfSeasonEnds
@@ -56,19 +56,18 @@ public struct Fields: Codable {
         self.photos = photos
         self.address = address
         self.influencers = influencers
-        self.travellers = travellers
     }
     
-    let peakSurfSeasonBegins, destinationStateCountry, peakSurfSeasonEnds: String
+    let peakSurfSeasonBegins, peakSurfSeasonEnds: String
+    let destinationStateCountry: String?
     let difficultyLevel: Int
     let destination: String
     let surfBreak: [SurfBreak]
-    let magicSeaweedLink: String
-    let photos: [Photo]
-    let address: String
-    let influencers: [Influencer]?
-    let travellers: [String]?
-
+    let magicSeaweedLink: String?
+    let photos: [Photo]?
+    let address: String?
+    let influencers: [String]?
+    
     enum CodingKeys: String, CodingKey {
         case peakSurfSeasonBegins = "Peak Surf Season Begins"
         case destinationStateCountry = "Destination State/Country"
@@ -80,44 +79,12 @@ public struct Fields: Codable {
         case photos = "Photos"
         case address = "Address"
         case influencers = "Influencers"
-        case travellers = "Travellers"
     }
-}
-
-public enum Influencer: String, Codable {
-    case rec6XXh0NA3YateHo = "rec6XXh0NA3yateHo"
-    case recRENCkIVsaoGUPD = "recRENCkIVsaoGUPd"
-    case recf2Hoa8CLQojEYy = "recf2Hoa8CLQojEYy"
 }
 
 // MARK: - Photo
 public struct Photo: Codable {
-    
-    public init(id: String, 
-                width: Int,
-                height: Int,
-                url: String,
-                filename: String,
-                size: Int,
-                type: TypeEnum,
-                thumbnails: Thumbnails) {
-        self.id = id
-        self.width = width
-        self.height = height
-        self.url = url
-        self.filename = filename
-        self.size = size
-        self.type = type
-        self.thumbnails = thumbnails
-    }
-    
-    let id: String
-    let width, height: Int
     let url: String
-    let filename: String
-    let size: Int
-    let type: TypeEnum
-    let thumbnails: Thumbnails
 }
 
 // MARK: - Thumbnails
@@ -137,7 +104,7 @@ public struct Thumbnails: Codable {
 // MARK: - Full
 public struct Full: Codable {
     
-    public init(url: String, 
+    public init(url: String,
                 width: Int,
                 height: Int) {
         self.url = url
