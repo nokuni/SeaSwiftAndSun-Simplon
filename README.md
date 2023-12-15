@@ -1,14 +1,14 @@
-# Sea Swift and Sun
+# Sea Swift and Sun ☀️
 
-## Overview
+## Overview 👀
 
 This project involves evolving an existing iOS app initially built using UIKit. The goal is to integrate SwiftUI gradually while maintaining the original codebase. The project is segmented into versions (V1 to V9), each addressing specific improvements and new features requested by the client.
 
-## Brief Description
+## Brief Description 💁
 
 This project aims to enhance an existing iOS application by transitioning from UIKit to SwiftUI while introducing new features, improving the user interface, and ensuring seamless integration with backend databases and external APIs. It involves iterative development cycles focused on delivering stable versions, incorporating user feedback, and ensuring consistent communication within the team and with the client.
 
-## Versions Overview
+## Versions Overview 📄
 
 - **V1: Database Integration**
   - Connect the app to the provided database to replace mock data.
@@ -42,7 +42,7 @@ This project aims to enhance an existing iOS application by transitioning from U
 - **V9: Open for New Features**
   - Client open to new feature proposals to enhance the application further.
 
-## Team Organization
+## Team Organization 👫
 
 - **Team Size:** 3 developers
 - **Collaboration:** Mix of mob programming and individual work, ensuring equal task distribution and knowledge sharing.
@@ -50,7 +50,7 @@ This project aims to enhance an existing iOS application by transitioning from U
 - **Client Interaction:** Scheduled test sessions for "client" feedback and adjustments.
 - **Presentation:** Friday presentation to the client, highlighting progress, encountered issues, and proposed solutions.
 
-## Tools and Technologies
+## Tools and Technologies 🛠️
 
 - **iOS Stack:** Utilizing UIKit and SwiftUI for development.
 - **Database:** Integrating provided database resources for data handling.
@@ -59,21 +59,22 @@ This project aims to enhance an existing iOS application by transitioning from U
 - **Version Control:** Using Git with version tags and a stable main branch.
 - **Trello:** Using Trello Toool as Kanban for work organization 
 
-## Getting Started
+## Getting Started 🏁
 
 - Clone the repository and set up necessary environments.
 - Refer to the Kanban board for task allocation and planning.
 - Follow specific README files within version branches for detailed instructions.
 
-## Airtable Integration
+## Airtable Integration 📊
 
 - Each team has an Airtable account for data management.
 - Refer to provided instructions for API token generation and access.
-## Screen record 
+  
+## Screen record 📱 
 ## ![Simulator Screen Recording - iPhone 15 Pro - 2023-12-15 at 12 24 02](https://github.com/nokuni/SeaSwiftAndSun-Simplon/assets/101064028/f1ea43bb-f2de-4e46-998e-c3dfff928cf4)
 
 
-## Deliverables
+## Deliverables 📑
 
 - **Git Repository:** Detailed README covering project information and team dynamics.
 - **Client Presentation:** Prepared in PPT or Keynote format.
