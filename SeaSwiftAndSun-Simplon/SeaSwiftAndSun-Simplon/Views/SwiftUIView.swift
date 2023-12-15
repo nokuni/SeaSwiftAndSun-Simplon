@@ -43,7 +43,7 @@ struct MapView: View {
             completion?(city.originalName)
         } label: {
             Image(systemName: "figure.surfing")
-                .foregroundStyle(.black)
+                .foregroundStyle(.foreground)
                 .font(.title)
         }
     }
