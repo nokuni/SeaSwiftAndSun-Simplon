@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     
     var mapView: UIView?
     
+    let refreshControl = UIRefreshControl()
+    
     let apiManager = APIManager()
     let url = "https://api.airtable.com/v0/appLwnyGpn1sS3QSc/Surf%20Destinations"
     let token = "patKTpR8A45bdjdCl.e09bf84bc75e3c079b6ceda4de5abe8a2ee4bda1a82c268f98cb4667494b20dd"
@@ -33,6 +35,10 @@ class ViewController: UIViewController {
         self.title = "Liste des spots de surf"
         segmentedControl.addTarget(self, action: #selector(switchDisplay), for: .valueChanged)
         loadData()
+        
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
+        tableView.addSubview(refreshControl)
     }
     
     func loadData() {
@@ -43,8 +49,13 @@ class ViewController: UIViewController {
                 self.records = records
                 self.tableView.reloadData()
                 self.setupMap()
+                self.refreshControl.endRefreshing()
             }
         }
+    }
+
+    @objc func refresh(_ sender: AnyObject) {
+        loadData()
     }
     
     var fields: [Fields] { records.map(\.fields) }
@@ -70,6 +81,7 @@ class ViewController: UIViewController {
 
     @objc func addButtonTapped() {
         let addSpotViewController = NewSpotViewController()
+        addSpotViewController.addCompletion = loadData
         present(addSpotViewController, animated: true, completion: nil)
     }
 }

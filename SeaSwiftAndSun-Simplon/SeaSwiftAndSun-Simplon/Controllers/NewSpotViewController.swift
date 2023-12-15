@@ -13,6 +13,8 @@ class NewSpotViewController: UIViewController {
     let apiManager = APIManager()
     let url = "https://api.airtable.com/v0/appLwnyGpn1sS3QSc/Surf%20Destinations"
     let token = "patKTpR8A45bdjdCl.e09bf84bc75e3c079b6ceda4de5abe8a2ee4bda1a82c268f98cb4667494b20dd"
+    
+    public var addCompletion: (() -> Void)?
 
     let destinationName: StyledTextField = {
         let textField = StyledTextField()
@@ -176,6 +178,7 @@ class NewSpotViewController: UIViewController {
                 value: recordData
             )
             dismiss(animated: true)
+            addCompletion?()
             
         } catch let error {
             throw error
