@@ -11,7 +11,6 @@ import UIKit
 class StyledTextField: UITextField {
     var label: UILabel =  {
         let label = UILabel()
-        label.textColor = UIColor.black
         label.font = UIFont.systemFont(ofSize: 14, weight: .light)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label

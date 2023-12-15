@@ -18,7 +18,6 @@ class DetailSpotViewController: UIViewController {
         label.text = "surf Break Type"
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 24)
-        label.textColor = UIColor.black
         label.translatesAutoresizingMaskIntoConstraints = false
         label.layer.cornerRadius = 10
         label.layer.masksToBounds = true
@@ -30,7 +29,6 @@ class DetailSpotViewController: UIViewController {
         label.text = "Spot Name"
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 24)
-        label.textColor = UIColor.black
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -40,7 +38,6 @@ class DetailSpotViewController: UIViewController {
         label.text = "Country"
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 24)
-        label.textColor = UIColor.black
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -50,7 +47,6 @@ class DetailSpotViewController: UIViewController {
         label.text = "Season Start"
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 24)
-        label.textColor = UIColor.black
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -60,7 +56,6 @@ class DetailSpotViewController: UIViewController {
         label.text = "Season End"
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 24)
-        label.textColor = UIColor.black
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -70,13 +65,13 @@ class DetailSpotViewController: UIViewController {
         label.text = "Difficulty: "
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 24)
-        label.textColor = UIColor.black
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .systemBackground
         if let spot = spot {
             
             let formattedStartDate = DateFormatter.formattedDateFromString(spot.peakSurfSeasonBegins)

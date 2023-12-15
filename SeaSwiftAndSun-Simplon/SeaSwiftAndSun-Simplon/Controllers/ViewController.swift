@@ -23,7 +23,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let addButton = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(addButtonTapped))
+        let addButton = UIBarButtonItem(title: "Add", 
+                                        style: .plain,
+                                        target: self,
+                                        action: #selector(addButtonTapped))
+        addButton.tintColor = UIColor(Color.accentColor)
         navigationItem.rightBarButtonItem = addButton
 
         self.title = "Liste des spots de surf"
