@@ -69,7 +69,7 @@ This project aims to enhance an existing iOS application by transitioning from U
 
 - Each team has an Airtable account for data management.
 - Refer to provided instructions for API token generation and access.
-
+## Screen record 
 ## ![Simulator Screen Recording - iPhone 15 Pro - 2023-12-15 at 12 24 02](https://github.com/nokuni/SeaSwiftAndSun-Simplon/assets/101064028/f1ea43bb-f2de-4e46-998e-c3dfff928cf4)
 
 
