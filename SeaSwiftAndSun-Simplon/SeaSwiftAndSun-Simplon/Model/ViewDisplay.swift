@@ -9,5 +9,5 @@ import Foundation
 
 enum ViewDisplay {
     case list
-    case cards
+    case map
 }
