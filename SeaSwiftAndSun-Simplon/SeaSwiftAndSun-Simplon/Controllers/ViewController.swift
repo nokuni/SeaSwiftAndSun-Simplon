@@ -6,12 +6,13 @@
 //
 
 import UIKit
+import SwiftUI
 
 class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
-    var collectionView: UICollectionView?
+    var mapView: UIView?
     
     let apiManager = APIManager()
     let url = "https://api.airtable.com/v0/appLwnyGpn1sS3QSc/Surf%20Destinations"
@@ -27,17 +28,17 @@ class ViewController: UIViewController {
 
         self.title = "Liste des spots de surf"
         segmentedControl.addTarget(self, action: #selector(switchDisplay), for: .valueChanged)
-        configureCollection()
-        collectionView?.isHidden = true
+        loadData()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    func loadData() {
         DispatchQueue.main.async {
             Task {
                 let data: RecordData = try await self.apiManager.get(url: self.url, token: self.token)
                 let records = data.records
                 self.records = records
                 self.tableView.reloadData()
+                self.setupMap()
             }
         }
     }
@@ -107,15 +108,18 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         cell.setUpCell(field: field)
         return cell
     }
-
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let fields = getSectionFields(section: indexPath.section)
         let selectedSpot = fields[indexPath.row]
-
+        
+        moveToDetailView(selectedSpot: selectedSpot)
+    }
+    
+    func moveToDetailView(selectedSpot: Fields?) {
         if let detailVC = storyboard?.instantiateViewController(withIdentifier: "DetailSpotViewController") as? DetailSpotViewController {
             detailVC.spot = selectedSpot
             let backButton = UIBarButtonItem()
-            backButton.title = "Back"
             navigationItem.backBarButtonItem = backButton
             navigationController?.pushViewController(detailVC, animated: true)
         }
@@ -127,53 +131,54 @@ extension ViewController {
     
     private func switchToList() {
         self.tableView.isHidden = false
-        self.collectionView?.isHidden = true
+        self.mapView?.isHidden = true
         currentDisplay = .list
     }
     
-    private func switchToCards() {
+    private func switchToMap() {
         self.tableView.isHidden = true
-        self.collectionView?.isHidden = false
-        currentDisplay = .cards
+        self.mapView?.isHidden = false
+        currentDisplay = .map
     }
     
     @objc func switchDisplay() {
         switch currentDisplay {
         case .list:
-            switchToCards()
-        case .cards:
+            switchToMap()
+        case .map:
             switchToList()
         }
     }
 }
 
-extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+// MARK: - Map
+extension ViewController {
     
-    func configureCollection() {
-        
-        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
-        layout.itemSize = CGSize(width: UIScreen.main.bounds.width * 0.9, 
-                                 height: UIScreen.main.bounds.height * 0.3)
-        
-        collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
-        collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "SpotCard")
-        collectionView?.backgroundColor = UIColor.white
-        view.addSubview(collectionView ?? UICollectionView())
-        
-        collectionView?.dataSource = self
-        collectionView?.delegate = self
+    func selectedSpot(name: String) -> Fields? {
+        guard let index = fields.firstIndex(where: { $0.destinationStateCountry == name }) else {
+            return nil
+        }
+        return fields[index]
     }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        5
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, 
-                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SpotCard", for: indexPath)
-        cell.backgroundColor = .black
-        cell.layer.cornerRadius = 20
-        return cell
+    func setupMap() {
+        let destinations = fields.compactMap { $0.destinationStateCountry }
+        mapView = addSwiftUIView(swiftUIView: MapView(addresses: destinations, completion: { name in
+            if let selectedSpot = self.selectedSpot(name: name) {
+                self.moveToDetailView(selectedSpot: selectedSpot)
+            }
+        }))
+        mapView?.frame = view.frame
+        
+        let height = UIScreen.main.bounds.height
+        let width = UIScreen.main.bounds.width
+        
+        let widthConstraint = NSLayoutConstraint(item: mapView!, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: width)
+        self.view.addConstraint(widthConstraint)
+        
+        let heightConstraint = NSLayoutConstraint(item: mapView!, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: height)
+        self.view.addConstraint(heightConstraint)
+        
+        mapView?.isHidden = true
     }
 }
