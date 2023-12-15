@@ -22,7 +22,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let addButton = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(addButtonTapped))
+        navigationItem.rightBarButtonItem = addButton
+
         self.title = "Liste des spots de surf"
         segmentedControl.addTarget(self, action: #selector(switchDisplay), for: .valueChanged)
         configureCollection()
@@ -59,6 +61,11 @@ class ViewController: UIViewController {
         default:
             surfbreaks(category: .outerBanks)
         }
+    }
+
+    @objc func addButtonTapped() {
+        let addSpotViewController = NewSpotViewController()
+        present(addSpotViewController, animated: true, completion: nil)
     }
 }
 

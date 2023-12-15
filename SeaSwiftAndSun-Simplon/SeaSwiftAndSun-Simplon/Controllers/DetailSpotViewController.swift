@@ -11,6 +11,7 @@ class DetailSpotViewController: UIViewController {
     @IBOutlet weak var spotImage: UIImageView!
     var starContainer = UIStackView()
     var spot: Fields?
+    var magicLinkButton: UIButton?
     
     var surfBreakType: UILabel =  {
         let label = UILabel()
@@ -108,44 +109,42 @@ class DetailSpotViewController: UIViewController {
                 surfBreakType.backgroundColor = UIColor.init(red: 196/255, green: 236/255, blue: 255/255, alpha: 1.0)
             }
         }
-        
+        setupMagicLinkButton()
         setUpConstraints()
     }
-    
+}
+
+//MARK: extension of the DetailVC:
+
+extension DetailSpotViewController {
+
+    //MARK: We set up our Link Button
+    func setupMagicLinkButton() {
+        magicLinkButton = UIButton(type: .system)
+        magicLinkButton?.setTitle("🌊 See more", for: .normal)
+        magicLinkButton?.titleLabel?.font = UIFont(name: "Arial-BoldMT", size: 22)
+        magicLinkButton?.setTitleColor(UIColor.init(red: 13/255, green: 82/255, blue: 172/255, alpha: 1.0), for: .normal)
+        magicLinkButton?.addTarget(self, action: #selector(linkButtonTapped), for: .touchUpInside)
+        magicLinkButton?.translatesAutoresizingMaskIntoConstraints = false
+    }
+
+    //MARK: When button tapped we do this👇
+    @objc func linkButtonTapped() {
+        guard let magicSeaweedLink = spot?.magicSeaweedLink,
+              let url = URL(string: magicSeaweedLink) else {
+            return
+        }
+        UIApplication.shared.open(url)
+    }
+
+    //MARK: To get Picture URL 👇
     func getPictureURL(spot: Fields) -> URL? {
-        guard let urlString = spot.photos.first?.url,
+        guard let urlString = spot.photos?.first?.url,
               let url = URL(string: urlString) else { return nil }
         return url
     }
-    
-    func setUpConstraints() {
-        let horizontalStackView = UIStackView(arrangedSubviews: [difficultyLevel, starContainer])
-        horizontalStackView.axis = .horizontal
-        horizontalStackView.alignment = .center
-        horizontalStackView.spacing = 10
-        horizontalStackView.translatesAutoresizingMaskIntoConstraints = false
-        
-        let verticalStackView = UIStackView(arrangedSubviews: [spotName, country, horizontalStackView,  seasonStart, seasonEnd, ])
-        verticalStackView.axis = .vertical
-        verticalStackView.alignment = .center
-        verticalStackView.spacing = 10
-        verticalStackView.translatesAutoresizingMaskIntoConstraints = false
-        
-        view.addSubview(verticalStackView)
-        view.addSubview(surfBreakType)
-        
-        NSLayoutConstraint.activate([
-            surfBreakType.widthAnchor.constraint(equalToConstant: 150),
-            surfBreakType.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            surfBreakType.topAnchor.constraint(equalTo: spotImage.bottomAnchor, constant: 30),
-            
-            verticalStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            verticalStackView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 150),
-            verticalStackView.widthAnchor.constraint(lessThanOrEqualTo: view.widthAnchor, constant: -40),
-            verticalStackView.heightAnchor.constraint(lessThanOrEqualTo: view.heightAnchor, constant: -40)
-        ])
-    }
-    
+
+    //MARK: To add stars for diff lvl ⭐️
     func addDifficultyStars(difficultyLevel: Int) {
         let starSize: CGFloat = 20
         let spacing: CGFloat = 5
@@ -165,6 +164,39 @@ class DetailSpotViewController: UIViewController {
             starImageView.widthAnchor.constraint(equalToConstant: starSize).isActive = true
             starImageView.heightAnchor.constraint(equalToConstant: starSize).isActive = true
         }
+    }
+
+    //MARK: Set up Constrains for the view
+    func setUpConstraints() {
+        let horizontalStackView = UIStackView(arrangedSubviews: [difficultyLevel, starContainer])
+        horizontalStackView.axis = .horizontal
+        horizontalStackView.alignment = .center
+        horizontalStackView.spacing = 10
+        horizontalStackView.translatesAutoresizingMaskIntoConstraints = false
+        
+        let verticalStackView = UIStackView(arrangedSubviews: [spotName, country, horizontalStackView, seasonStart, seasonEnd])
+        verticalStackView.axis = .vertical
+        verticalStackView.alignment = .center
+        verticalStackView.spacing = 10
+        verticalStackView.translatesAutoresizingMaskIntoConstraints = false
+        
+        if let magicLinkButton = magicLinkButton {
+            verticalStackView.addArrangedSubview(magicLinkButton)
+        }
+        
+        view.addSubview(verticalStackView)
+        view.addSubview(surfBreakType)
+        
+        NSLayoutConstraint.activate([
+            surfBreakType.widthAnchor.constraint(equalToConstant: 150),
+            surfBreakType.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            surfBreakType.topAnchor.constraint(equalTo: spotImage.bottomAnchor, constant: 30),
+            
+            verticalStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            verticalStackView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 150),
+            verticalStackView.widthAnchor.constraint(lessThanOrEqualTo: view.widthAnchor, constant: -40),
+            verticalStackView.heightAnchor.constraint(lessThanOrEqualTo: view.heightAnchor, constant: -40)
+        ])
     }
 }
 
