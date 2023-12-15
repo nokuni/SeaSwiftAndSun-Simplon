@@ -26,9 +26,10 @@ class ViewController: UIViewController {
         
         self.title = "Liste des spots de surf"
         segmentedControl.addTarget(self, action: #selector(switchDisplay), for: .valueChanged)
+        loadData()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    func loadData() {
         DispatchQueue.main.async {
             Task {
                 let data: RecordData = try await self.apiManager.get(url: self.url, token: self.token)
@@ -112,7 +113,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         if let detailVC = storyboard?.instantiateViewController(withIdentifier: "DetailSpotViewController") as? DetailSpotViewController {
             detailVC.spot = selectedSpot
             let backButton = UIBarButtonItem()
-            backButton.title = "Back"
             navigationItem.backBarButtonItem = backButton
             navigationController?.pushViewController(detailVC, animated: true)
         }
